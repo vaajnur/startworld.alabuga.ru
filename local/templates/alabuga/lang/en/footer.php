@@ -1,0 +1,2 @@
+<?
+$MESS['PRIVACY'] = 'Privacy Policy';

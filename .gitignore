@@ -1,0 +1,117 @@
+# Исключаем настройки PHPStorm
+/.idea
+ 
+# сервисные скрипты битрикса
+/restore.php
+/bitrix_server_test.php
+ 
+# Исключаем папку /bitrix кроме некоторых подпапок
+!/bitrix
+/bitrix/*
+ 
+# оставляем печатные формы интернет-магазина
+!/bitrix/admin/
+/bitrix/admin/*
+!/bitrix/admin/reports/
+ 
+# оставляем нестандартные компоненты
+!/bitrix/components/
+/bitrix/components/aspro/
+/bitrix/components/centino/
+/bitrix/components/bitrix/
+ 
+# оставляем модули aspro, centino, так как в них могут быть кастомные классы и обработчики
+!/bitrix/modules/
+/bitrix/modules/*
+!/bitrix/modules/aspro.max/
+/bitrix/modules/aspro.max/*
+!/bitrix/modules/aspro.max/lib/
+/bitrix/modules/aspro.max/lib/*
+!/bitrix/modules/aspro.max/lib/functions/
+/bitrix/modules/aspro.max/lib/functions/*
+!/bitrix/modules/aspro.max/lib/functions/CAsproMaxCustom.php
+ 
+# сохраняем весь php_interface за редкими исключениями
+!/bitrix/php_interface/
+/bitrix/php_interface/dbconn.ph*
+/bitrix/php_interface/after_connect*
+/bitrix/php_interface/logs/
+ 
+# сохраняем шаблоны сайта
+!/bitrix/templates/
+/bitrix/templates/*
+!/bitrix/templates/.default/
+!/bitrix/templates/bitrix24/
+!/bitrix/templates/aspro_max_mail/
+!/bitrix/templates/aspro_max/
+ 
+# исключаем загружаемые файлы
+/upload/
+/upload_/
+ 
+# исключаем десктопное приложение
+/desktop_app/
+ 
+# исключаем резервную копию сайта и скрипты после миграции
+/backup_site*/
+/migratsiya-hit/
+ 
+# исключаем регионы
+/*_regions/
+ 
+# различные системные папки и файлы хостингов и операционных систем
+/cgi-bin/
+/awstats/
+/webstat/
+/old30.09.21/
+/webp-copy/
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+ 
+# текстовые и подобные файлы
+*.xml
+*.txt
+*.log
+*.css.map
+*.csv
+google*.html
+yandex_*.html
+yandex_*.txt
+sitemap_*.php
+sitemap-*.php
+ 
+# архивы, включая многотомные
+*.zip
+*.zip*  
+*.tar
+*.tar*
+*.enc
+*.enc*
+*.gz
+*.gz*
+*.tgz
+*.tgz*
+*.sql
+*.rar
+.hg
+.ftpconfig
+*.doc
+*.docx
+*.pdf
+*.rtf
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.psd
+*.psb
+*.sketch
+core.*
+*.mp4
+*.tar.gz
+
+# файлы бэкапы максимума
+_*.back*

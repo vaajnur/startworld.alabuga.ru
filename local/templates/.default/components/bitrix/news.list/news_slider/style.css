@@ -1,0 +1,123 @@
+.main-news_slider
+{
+	margin: 0px -7px;
+}
+.main-news_slider .slick-track
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: streight;
+      -ms-flex-align: streight;
+          align-items: streight;		
+}
+.main-news_slider .slick-slide
+{
+	height: auto;
+}
+.main-news_slider .item
+{
+	padding: 0px 7px;
+}
+.main-news_block h3
+{
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.main-news_cart
+{
+	background: #F2F2F2;
+	padding: 15px 15px 30px 15px;
+    -webkit-border-radius: 1.875rem;
+    -moz-border-radius: 1.875rem;
+    -ms-border-radius: 1.875rem;
+    -o-border-radius: 1.875rem;
+	
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+		  flex-direction: column;
+		  height: 100%;
+}
+.main-news_cart .pic
+{
+    -webkit-border-radius: 1.875rem;
+    -moz-border-radius: 1.875rem;
+    -ms-border-radius: 1.875rem;
+    -o-border-radius: 1.875rem;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+.main-news_cart .pic img
+{
+	max-width: 100%;
+}
+.main-news_cart .name
+{
+	margin-bottom: 1em;
+}
+.main-news_cart .name a
+{
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.main-news_cart .date
+{
+	margin-top: 1em;
+	color: #005DAC;
+}
+.news_detail img
+{
+	max-width: 100%;
+	margin-bottom: 15px;
+}
+.news_detail .date
+{
+	color: #005DAC;
+	margin-bottom: 10px;
+}
+.news_detail .name
+{
+	font-size: clamp(1.1875rem, 3.5vw, 1.875rem);
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.slider-gallery .arrow__prev {
+  left: -30px;
+}
+
+.slider-gallery .arrow__next {
+  right: -30px;
+}
+
+.slider-gallery .slick-dots li button::before{
+	font-size: 2rem;
+}
+
+@media (max-width: 480px){
+	.news_detail.fancybox-content{
+		max-width: 380px !important;
+  		max-height: fit-content !important;
+	}
+
+	.fancybox-container .fancybox-slide{
+		height: auto;
+	}
+
+	.fancybox-container .news_detail img{
+		max-height: fit-content;
+		height: auto;
+	}
+
+	.fancybox-container.fancybox-is-open .fancybox-stage{
+		overflow-y: scroll;
+	}
+
+}

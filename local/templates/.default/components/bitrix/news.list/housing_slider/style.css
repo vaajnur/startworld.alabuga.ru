@@ -1,0 +1,60 @@
+.main-program .image .hosing_slider img
+{
+	width: auto;
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+}
+.hosing_slider .item 
+{
+	position: relative;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+	border-radius: 2.5rem;
+	overflow: hidden;
+}
+.hosing_slider .item .slick-dots
+{
+	bottom: 0px;	
+	background: rgba(0,93,172, 0.8);
+	padding-bottom: 10px;
+}
+.hosing_slider .item .slick-dots li button
+{
+	background: #fff;
+	color: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.hosing_slider .item .slick-dots li.slick-active button
+{
+	background: #66afed;
+}
+.hosing_slider .item .slick-dots li button:before
+{
+	color: #fff;
+}
+.hosing_slider .item .slick-dots li.slick-active button:before
+{
+	color: #66afed;
+}
+.hosing_slider .item .head_txt
+{
+	background: rgba(0,93,172, 0.8);
+	color: #fff;
+	padding: 10px;
+	position: absolute;
+	bottom: 36px;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.hosing_slider .slick-dotted.slick-slider
+{
+	margin-bottom: 0px;
+}

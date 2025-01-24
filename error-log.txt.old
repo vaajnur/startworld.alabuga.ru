@@ -1,0 +1,1575 @@
+2024-12-03 09:13:58 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/fr/index.php:2
+----------
+
+2024-12-03 09:14:06 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/fr/index.php:2
+----------
+
+2024-12-03 09:25:42 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/fr/index.php:2
+----------
+
+2024-12-03 09:26:05 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/fr/index.php:2
+----------
+
+2024-12-03 09:28:28 - Host: startworld.alabuga.ru - UNKNOWN - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (1040) Too many connections (400)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:85
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:137
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal(string, array, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/connection.php:327
+#2: Bitrix\Main\DB\Connection->query(string, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/connection.php:376
+#3: Bitrix\Main\DB\Connection->queryExecute(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/session/handlers/table/usersessiontable.php:168
+#4: Bitrix\Main\Session\Handlers\Table\UserSessionTable::deleteOlderThan(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/security/classes/general/session_db.php:141
+#5: CSecuritySessionDB::gc(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/security/classes/general/session.php:52
+#6: CSecuritySession::CleanUpAgent()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php(181) : eval()'d code:1
+#7: eval
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php:181
+#8: CAgent::ExecuteAgents()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php:21
+#9: CAgent::CheckAgents()
+	
+#10: call_user_func_array(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:780
+#11: Bitrix\Main\Application->runBackgroundJobs()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:369
+#12: Bitrix\Main\Application->terminate(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:336
+#13: Bitrix\Main\Application->end()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/main.php:3485
+#14: CAllMain::FinalActions(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/epilog_after.php:61
+#15: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/epilog.php:3
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/footer.php:4
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:1055
+----------
+
+2024-12-03 09:28:33 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:33:16 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:36:41 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:36:47 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:37:02 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:37:08 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:37:48 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:37:57 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:38:35 - Host: startworld.alabuga.ru - UNKNOWN - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (1040) Too many connections (400)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:85
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:137
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal(string, array, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/connection.php:327
+#2: Bitrix\Main\DB\Connection->query(string, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/connection.php:376
+#3: Bitrix\Main\DB\Connection->queryExecute(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/session/handlers/table/usersessiontable.php:168
+#4: Bitrix\Main\Session\Handlers\Table\UserSessionTable::deleteOlderThan(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/security/classes/general/session_db.php:141
+#5: CSecuritySessionDB::gc(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/security/classes/general/session.php:52
+#6: CSecuritySession::CleanUpAgent()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php(181) : eval()'d code:1
+#7: eval
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php:181
+#8: CAgent::ExecuteAgents()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php:21
+#9: CAgent::CheckAgents()
+	
+#10: call_user_func_array(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:780
+#11: Bitrix\Main\Application->runBackgroundJobs()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:369
+#12: Bitrix\Main\Application->terminate(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:336
+#13: Bitrix\Main\Application->end()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/main.php:3485
+#14: CAllMain::FinalActions(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/epilog_after.php:61
+#15: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/epilog.php:3
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/footer.php:4
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:1055
+----------
+
+2024-12-03 09:43:19 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:44:28 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:44:30 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:44:32 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:44:33 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:49:37 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:49:42 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:49:43 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:49:48 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:49:57 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:49:58 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:49:59 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:50:01 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:50:03 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:50:25 - Host: startworld.alabuga.ru - UNKNOWN - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (1040) Too many connections (400)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:85
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:137
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal(string, array, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/connection.php:327
+#2: Bitrix\Main\DB\Connection->query(string, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/connection.php:376
+#3: Bitrix\Main\DB\Connection->queryExecute(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/session/handlers/table/usersessiontable.php:168
+#4: Bitrix\Main\Session\Handlers\Table\UserSessionTable::deleteOlderThan(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/security/classes/general/session_db.php:141
+#5: CSecuritySessionDB::gc(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/security/classes/general/session.php:52
+#6: CSecuritySession::CleanUpAgent()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php(181) : eval()'d code:1
+#7: eval
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php:181
+#8: CAgent::ExecuteAgents()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/mysql/agent.php:21
+#9: CAgent::CheckAgents()
+	
+#10: call_user_func_array(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:780
+#11: Bitrix\Main\Application->runBackgroundJobs()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:369
+#12: Bitrix\Main\Application->terminate(integer)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:336
+#13: Bitrix\Main\Application->end()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/main.php:3485
+#14: CAllMain::FinalActions(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/epilog_after.php:61
+#15: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/epilog.php:3
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/footer.php:4
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:1055
+----------
+
+2024-12-03 09:51:14 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:51:59 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 09:52:19 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 10:02:33 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/es/index.php:2
+----------
+
+2024-12-03 10:02:33 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/ar/index.php:2
+----------
+
+2024-12-03 10:02:33 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:305
+#3: CAllDatabase->DoConnect()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/database.php:703
+#4: CAllDatabase->ForSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:738
+#5: CAllSQLWhere->addStringFilter(array, boolean, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:381
+#6: CAllSQLWhere->GetQueryEx(array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/classes/general/sqlwhere.php:265
+#7: CAllSQLWhere->GetQuery(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2210
+#8: Bitrix\Main\ORM\Query\Query->buildWhere()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:2440
+#9: Bitrix\Main\ORM\Query\Query->buildQuery()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/query/query.php:933
+#10: Bitrix\Main\ORM\Query\Query->exec()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/orm/data/datamanager.php:513
+#11: Bitrix\Main\ORM\Data\DataManager::getList(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/site.php:153
+#12: Bitrix\Main\SiteTable::getByDomain(string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpcontext.php:100
+#13: Bitrix\Main\HttpContext->initializeCulture(NULL, NULL)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:36
+#14: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#15: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#16: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#17: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/ru/index.php:2
+----------
+
+2024-12-03 10:13:06 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqlisqlhelper.php:401
+#3: Bitrix\Main\DB\MysqliSqlHelper->forSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:206
+#4: Bitrix\Main\Config\Option::load(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:83
+#5: Bitrix\Main\Config\Option::getRealValue(string, string, boolean)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:32
+#6: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:413
+#7: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:72
+#8: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpapplication.php:44
+#9: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:135
+#10: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:22
+#11: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#12: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#13: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#14: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 10:14:12 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqlisqlhelper.php:401
+#3: Bitrix\Main\DB\MysqliSqlHelper->forSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:206
+#4: Bitrix\Main\Config\Option::load(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:83
+#5: Bitrix\Main\Config\Option::getRealValue(string, string, boolean)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:32
+#6: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:413
+#7: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:72
+#8: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpapplication.php:44
+#9: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:135
+#10: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:22
+#11: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#12: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#13: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#14: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 10:14:12 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqlisqlhelper.php:401
+#3: Bitrix\Main\DB\MysqliSqlHelper->forSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:206
+#4: Bitrix\Main\Config\Option::load(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:83
+#5: Bitrix\Main\Config\Option::getRealValue(string, string, boolean)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:32
+#6: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:413
+#7: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:72
+#8: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpapplication.php:44
+#9: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:135
+#10: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:22
+#11: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#12: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#13: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#14: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+
+2024-12-03 10:14:12 - Host: startworld.alabuga.ru - UNCAUGHT_EXCEPTION - [mysqli_sql_exception] 
+Too many connections (1040)
+/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#0: mysqli->real_connect(string, string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqliconnection.php:80
+#1: Bitrix\Main\DB\MysqliConnection->connectInternal()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/data/connection.php:53
+#2: Bitrix\Main\Data\Connection->getResource()
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/db/mysqlisqlhelper.php:401
+#3: Bitrix\Main\DB\MysqliSqlHelper->forSql(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:206
+#4: Bitrix\Main\Config\Option::load(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:83
+#5: Bitrix\Main\Config\Option::getRealValue(string, string, boolean)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/config/option.php:32
+#6: Bitrix\Main\Config\Option::get(string, string, string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:413
+#7: Bitrix\Main\HttpRequest->prepareCookie(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httprequest.php:72
+#8: Bitrix\Main\HttpRequest->__construct(object, array, array, array, array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/httpapplication.php:44
+#9: Bitrix\Main\HttpApplication->initializeContext(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/lib/application.php:135
+#10: Bitrix\Main\Application->initializeExtendedKernel(array)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include.php:22
+#11: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog_before.php:19
+#12: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/modules/main/include/prolog.php:10
+#13: require_once(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/bitrix/header.php:1
+#14: require(string)
+	/var/www/isp/data/www/startworld.alabuga.ru/index.php:2
+----------
+

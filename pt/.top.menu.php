@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Empresa", 
+		"#company", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Feedback", 
+		"#feedback", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Benefícios do programa", 
+		"#benefits", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Campos oferecidos", 
+		"#fields", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Admissao", 
+		"#admission", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Contacto", 
+		"#contacts", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

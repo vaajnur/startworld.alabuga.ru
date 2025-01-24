@@ -1,0 +1,26 @@
+.main-feedback_cart video.video_play-our{
+
+}
+
+.main-feedback_cart .thumb-wrap {
+	position: static;
+    padding: 0;
+    height: auto;
+    overflow: visible;
+    text-align: center;
+}
+
+.main-feedback_block .slick-list{
+}
+
+.video-label{
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.875rem;
+    left: 0;
+    right: 0;
+    top: 10px;
+}

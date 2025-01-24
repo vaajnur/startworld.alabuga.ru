@@ -1,0 +1,7 @@
+.header_nav ul {
+  gap: 1.1rem;
+}
+
+.header_nav ul li a {
+  font-size: 0.7375rem;
+}
