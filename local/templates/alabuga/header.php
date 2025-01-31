@@ -29,6 +29,7 @@ define("FILES_LINK", \COption::GetOptionString( "askaron.settings", "UF_FILES_LI
 	<title><?$APPLICATION->ShowTitle()?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico" />
+	<meta property="og:image" content="/local/templates/alabuga/img/logo.svg"/>
     <?	
 		$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH.'/css/style.css?t=2');
 		$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH.'/css/grid.css');

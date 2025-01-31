@@ -1,6 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("ALABUGA START - Programme de l’insertion professionnelle des jeunes spécialistes en Russie");
+$APPLICATION->SetPageProperty("title", "ALABUGA START WORLD - Relocation program to Russia for work experience");
+$APPLICATION->SetPageProperty("tags", "ALABUGA START WORLD");
+$APPLICATION->SetPageProperty("keywords", "ALABUGA START WORLD", "АЛАБУГА СТАРТ ВОРЛД", "АЛАБУГА СТАРТ ВОРД");
+$APPLICATION->SetPageProperty("description", "Alabuga start world is a unique opportunity for young and talented people from all over the world to build a career and change their lives for the better"); 
+
 ?><div class="main-zone" id="company">
 	<div class="page__wrap">
 		<h2> <i>LA PLUS RÉUSSIE EN RUSSIE</i> ET LA MEILLEURE EN EUROPE ZONE ÉCONOMIQUE SPÉCIALE «ALABUGA» ATTIRE LES INVESTISSEURS AVEC UN NOMBRE D'AVANTAGES SANS DOUTE.</h2>
