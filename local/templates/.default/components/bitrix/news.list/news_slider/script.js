@@ -65,6 +65,7 @@ $(() => {
 
 	let link = location.href.match(/#detail_\d+/);
 	if( link && $(`[data-src="${link}"]`).length ) {
-		$(`[data-src="${link}"]`).trigger('click');
+		$(`[data-src="${link}"]`).trigger('click');		
+		$('.fancybox-container').eq(0).remove();
 	}
 });
