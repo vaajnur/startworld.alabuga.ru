@@ -106,8 +106,8 @@ $APPLICATION->SetTitle("АЛАБУГА СТАРТ - Программа труд�
 					</div>
 					<div class="bx">
 						<div class="cart-group">
-							<div class="numb">
- <i>＄</i><?=\COption::GetOptionString( "askaron.settings", "UF_ACT_INVEST");?><i>млрд</i>
+							<div class="numb" style="line-height: 30px;">
+ 								<?=\COption::GetOptionString( "askaron.settings", "UF_INVESTMENTS");?><i><br> млрд руб.</i>
 							</div>
 							<div class="txt">
 								 Фактически вложено резидентами
@@ -116,11 +116,11 @@ $APPLICATION->SetTitle("АЛАБУГА СТАРТ - Программа труд�
 					</div>
 					<div class="bx">
 						<div class="cart-group">
-							<div class="numb">
- <i>＄</i><?=\COption::GetOptionString( "askaron.settings", "UF_RES_REV");?><i>млрд</i>
+							<div class="numb" style="line-height: 30px;">
+ 								<?=\COption::GetOptionString( "askaron.settings", "UF_REVENUE");?><i><br> млрд руб.</i>
 							</div>
 							<div class="txt">
-								 Доход резидентов на 10.01.2023
+								 Доход резидентов на 01.09.2024
 							</div>
 						</div>
 					</div>
@@ -226,7 +226,7 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
 						Участники из 44 стран, таких, как Мозамбик, Колумбия, Мали, Лесото, Зимбабве, Бенин, Руанда, Танзания, Тунис, Южный Судан, Др Конго, Шри-Ланка и т.д. приняты на работу в 2024 году по программе «Алабуга Старт». </h2>
 					</div>
 					<div class="bx">
-						<div class="main-plan_cart">
+						<!-- <div class="main-plan_cart">
 							<div class="ttl">
 								 План набора на 2024 ГОД:
 							</div>
@@ -238,8 +238,8 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
 									<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_CNTR");?> страны </li>
 								</ul>
 							</div>
- <a href="<?=JOIN_LINK_RU?>" data-join target="_blank" class="page__btn page__btn--main"> ПОДАТЬ ЗАЯВКУ </a>
-						</div>
+ 							<a href="<?=JOIN_LINK_RU?>" data-join target="_blank" class="page__btn page__btn--main"> ПОДАТЬ ЗАЯВКУ </a>
+						</div> -->
 						 <!-- /.main-plan_cart -->
 					</div>
 				</div>
@@ -437,7 +437,7 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
 		<div class="d-flex flex-wrap">
 			<div class="bx">
 				<div class="image js-ban">
- <img src="/local/templates/alabuga/img/img.jpg" alt="" class="mw-100 d-block">
+					 <img src="/local/templates/alabuga/img/img.jpg" alt="" class="mw-100 d-block">
 				</div>
 			</div>
 			<div class="bx">
@@ -447,43 +447,57 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
 					<div class="list">
 						<ul>
 							<li>
-							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/graduation-cap_icon.svg" alt="" class="mw-100 d-block">
-							</div>
-							 ПРОФЕССИОНАЛЬНАЯ ПОДГОТОВКА </li>
+								<div class="icon">
+									 <img src="/local/templates/alabuga/img/icon/graduation-cap_icon.svg" alt="" class="mw-100 d-block">
+								</div>
+								 ПРОФЕССИОНАЛЬНАЯ ПОДГОТОВКА 
+							</li>
+
 							<li>
-							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/bubble-chat_icon.svg" alt="" class="mw-100 d-block">
-							</div>
-								<a href="https://lyl.su/UnoG" target="_blank">УРОКИ РУССКОГО ЯЗЫКА</a> </li>
+								<div class="icon">
+									 <img src="/local/templates/alabuga/img/icon/bubble-chat_icon.svg" alt="" class="mw-100 d-block">
+								</div>
+									<a href="https://lyl.su/UnoG" target="_blank">УРОКИ РУССКОГО ЯЗЫКА</a> 
+							</li>
+
 							<li>
-							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/house-key_icon.svg" alt="" class="mw-100 d-block">
-							</div>
-							 ЛЬГОТНОЕ ПРОЖИВАНИЕ В КОМФОРТАБЕЛЬНЫХ <a href="#housing" class="gtSteps" target="_blank">ХОСТЕЛАХ</a> </li>
+								<div class="icon">
+									 <img src="/local/templates/alabuga/img/icon/house-key_icon.svg" alt="" class="mw-100 d-block">
+								</div>
+								 ЛЬГОТНОЕ ПРОЖИВАНИЕ В КОМФОРТАБЕЛЬНЫХ <a href="#housing" class="gtSteps" target="_blank">ХОСТЕЛАХ</a> 
+							</li>
+
 							<li>
-							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/wallet_icon.svg" alt="" class="mw-100 d-block">
-							</div>
-							 Денежное содержание от <?=str_replace(' ', '&nbsp;', \COption::GetOptionString( "askaron.settings", "UF_MTH_ALW"));?> РУБ. </li>
+								<div class="icon">
+									 <img src="/local/templates/alabuga/img/icon/wallet_icon.svg" alt="" class="mw-100 d-block">
+								</div>
+								 Денежное содержание от <?=str_replace(' ', '&nbsp;', \COption::GetOptionString( "askaron.settings", "UF_MTH_ALW"));?> РУБ. 
+							</li>
+
 							<li>
-							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/plane_icon.svg" alt="" class="mw-100 d-block">
-							</div>
-							 БЕСПЛАТНЫЙ ПЕРЕЛЕТ В РОССИЮ </li>
+								<div class="icon">
+									 <img src="/local/templates/alabuga/img/icon/plane_icon.svg" alt="" class="mw-100 d-block">
+								</div>
+								 БЕСПЛАТНЫЙ ПЕРЕЛЕТ В РОССИЮ 
+							</li>
+
 							<li>
-							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/treatment_icon.svg" alt="" class="mw-100 d-block">
-							</div>
-							 МЕДИЦИНСКОЕ СТРАХОВАНИЕ </li>
+								<div class="icon">
+									 <img src="/local/templates/alabuga/img/icon/treatment_icon.svg" alt="" class="mw-100 d-block">
+								</div>
+								 МЕДИЦИНСКОЕ СТРАХОВАНИЕ 
+							</li>
+
 							<li>
-							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/transfer_icon.svg" alt="" class="mw-100 d-block">
-							</div>
-							 ТРАНСФЕР </li>
+								<div class="icon">
+									 <img src="/local/templates/alabuga/img/icon/transfer_icon.svg" alt="" class="mw-100 d-block">
+								</div>
+								 ТРАНСФЕР 
+							</li>
+
 						</ul>
 					</div>
- <a href="<?=JOIN_LINK_RU?>" data-join target="_blank" class="page__btn page__btn--main"> ПОДАТЬ ЗАЯВКУ </a>
+					 <a href="<?=JOIN_LINK_RU?>" data-join target="_blank" class="page__btn page__btn--main"> ПОДАТЬ ЗАЯВКУ </a>
 				</div>
 				 <!-- /.main-program_cart -->
 			</div>
@@ -736,7 +750,7 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
 				 <!-- /.main-step_cart -->
 				<div class="main-step_cart">
 					<h2>
-					СРОКИ ПРИЕМА НА <i>2024</i> ГОД </h2>
+					СРОКИ ПРИЕМА НА <i>2025</i> ГОД </h2>
 					<div class="list">
 						<ul>
 							<li>

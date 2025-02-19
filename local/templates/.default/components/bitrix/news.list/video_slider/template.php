@@ -12,6 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
+<? if($arResult["ITEMS"]):?>
 <div class="main-feedback_block">
     <div class="main-feedback_slider js-main-feedback_slider">
 <?foreach($arResult["ITEMS"] as $arItem):?>
@@ -42,6 +43,7 @@ $this->setFrameMode(true);
     </div>
     <!-- /.main-feedback_slider -->
 </div>
+<? endif;?>
 <!-- /.main-feedback_block -->
 
 <? /* <div class="main-feedback_bottom js-main-feedback_arr">

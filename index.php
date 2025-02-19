@@ -716,7 +716,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 							<div class="icon">
  								<img src="/local/templates/alabuga/img/icon/id-card_icon.svg" alt="card" class="mw-100 d-block">
 							</div>
-							 <!-- /.icon --> 2. Send your cv using this <a title="form" href="<?=CV_FORM?>" target="_blank">form</a> </li>
+							 <!-- /.icon --> 2. Send your cv using this <a title="form" href="<?=CV_FORM?>" target="_blank" data-join>form</a> </li>
 							<li>
 							<div class="icon">
  								<img src="/local/templates/alabuga/img/icon/bubble-chat_small_icon.svg" alt="bubble" class="mw-100 d-block">
