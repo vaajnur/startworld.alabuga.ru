@@ -218,7 +218,7 @@ $APPLICATION->SetTitle("ALABUGA START - Relocation program to Russia for work ex
 					<div class="bx">
 						<div class="main-plan_cart">
 							<div class="ttl">
-								 PLAN DE RECLUTAMIENTO 2024:
+								 PLAN DE RECLUTAMIENTO 2025:
 							</div>
 							<div class="list">
 								<ul>
@@ -241,7 +241,7 @@ $APPLICATION->SetTitle("ALABUGA START - Relocation program to Russia for work ex
 	<div class="main-plan_bottom">
 		<div class="main-plan_cart">
 			<div class="ttl">
-				 PLAN DE RECLUTAMIENTO 2024:
+				 PLAN DE RECLUTAMIENTO 2025:
 			</div>
 			<div class="list">
 				<ul>
@@ -645,7 +645,7 @@ $APPLICATION->SetTitle("ALABUGA START - Relocation program to Russia for work ex
 				 <!-- /.main-step_cart -->
 				<div class="main-step_cart">
 					<h2>
-					PLAZOS DE ADMISIÓN PARA <i>2024</i> </h2>
+					PLAZOS DE ADMISIÓN PARA <i>2025</i> </h2>
 					<div class="list">
 						<ul>
 							<li>

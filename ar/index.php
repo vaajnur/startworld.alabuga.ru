@@ -218,7 +218,7 @@ $APPLICATION->SetTitle("ألابوغا ستارت - للأشخاص من جميع
 					<div class="bx">
 						<div class="main-plan_cart">
 							<div class="ttl">
-								 خطة التوظيف 2024:
+								 خطة التوظيف 2025:
 							</div>
 							<div class="list">
 								<ul>
@@ -241,7 +241,7 @@ $APPLICATION->SetTitle("ألابوغا ستارت - للأشخاص من جميع
 	<div class="main-plan_bottom rtl">
 		<div class="main-plan_cart">
 			<div class="ttl">
-				 خطة التوظيف 2024:
+				 خطة التوظيف 2025:
 			</div>
 			<div class="list">
 				<ul>
@@ -644,7 +644,7 @@ $APPLICATION->SetTitle("ألابوغا ستارت - للأشخاص من جميع
 				 <!-- /.main-step_cart -->
 				<div class="main-step_cart rtl">
 					<h2>
-					المواعيد النهائية للقبول <span>لعام 2024</span> </h2>
+					المواعيد النهائية للقبول <span>لعام 2025</span> </h2>
 					<div class="list">
 						<ul>
 							<li>

@@ -251,7 +251,7 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
 	<div class="main-plan_bottom">
 		<div class="main-plan_cart">
 			<div class="ttl">
-				 План набора на 2024 ГОД:
+				 План набора на 2025 ГОД:
 			</div>
 			<div class="list">
 				<ul>

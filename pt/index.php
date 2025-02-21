@@ -116,7 +116,7 @@ ATRAI INVESTIDORES COM BENEFÍCIOS INCOMPARÁVEIS </h2>
  <i>＄</i><?=\COption::GetOptionString( "askaron.settings", "UF_RES_REV");?><i>bln</i>
 							</div>
 							<div class="txt">
-								 Em 10 de janeiro de 2023, a renda dos residentes era de US residentes 1,8 bilhão de dólares
+								 Em 10 de janeiro de 2024, a renda dos residentes era de US residentes 1,8 bilhão de dólares
 							</div>
 						</div>
 					</div>
@@ -216,12 +216,12 @@ ATRAI INVESTIDORES COM BENEFÍCIOS INCOMPARÁVEIS </h2>
 			<div class="page__wrap">
 				<div class="d-flex flex-wrap justify-content-between">
 					<div class="bx">
-						<h2>Participantes de 44 países, Como Brasil, Moçambique, Colômbia, Mali, Lesoto, Zimbábue, Benim, Ruanda, Tanzânia, Tunísia, Sudão Do Sul, República Democrática Do Congo, Sri Lanka, etc. Foram contratados em 2024 através do programa Alabuga Start.</h2>
+						<h2>Participantes de 44 países, Como Brasil, Moçambique, Colômbia, Mali, Lesoto, Zimbábue, Benim, Ruanda, Tanzânia, Tunísia, Sudão Do Sul, República Democrática Do Congo, Sri Lanka, etc. Foram contratados em 2025 através do programa Alabuga Start.</h2>
 					</div>
 					<div class="bx">
 						<div class="main-plan_cart">
 							<div class="ttl">
-								 PLANO DE RECRUTAMENTO 2024:
+								 PLANO DE RECRUTAMENTO 2025:
 							</div>
 							<div class="list">
 								<ul>
@@ -244,7 +244,7 @@ ATRAI INVESTIDORES COM BENEFÍCIOS INCOMPARÁVEIS </h2>
 	<div class="main-plan_bottom">
 		<div class="main-plan_cart">
 			<div class="ttl">
-				 PLANO DE RECRUTAMENTO 2024:
+				 PLANO DE RECRUTAMENTO 2025:
 			</div>
 			<div class="list">
 				<ul>
@@ -648,7 +648,7 @@ ATRAI INVESTIDORES COM BENEFÍCIOS INCOMPARÁVEIS </h2>
 				 <!-- /.main-step_cart -->
 				<div class="main-step_cart">
 					<h2>
-					PRAZOS DE ADMISSÃO PARA <i>2024</i> </h2>
+					PRAZOS DE ADMISSÃO PARA <i>2025</i> </h2>
 					<div class="list">
 						<ul>
 							<li>

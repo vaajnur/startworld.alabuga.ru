@@ -224,7 +224,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 					<div class="bx">
 						<div class="main-plan_cart">
 							<div class="ttl">
-								 2024 recruitment plan:
+								 2025 recruitment plan:
 							</div>
 							<div class="list">
 								<ul>
@@ -247,7 +247,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 	<div class="main-plan_bottom">
 		<div class="main-plan_cart">
 			<div class="ttl">
-				 2024 recruitment plan:
+				 2025 recruitment plan:
 			</div>
 			<div class="list">
 				<ul>
