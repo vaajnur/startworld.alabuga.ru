@@ -194,7 +194,7 @@ $(function() {
 	});
 	
 	
-	$('#faq .showBlock').next().slideToggle();
+	// $('#faq .showBlock').next().slideToggle();
 	$('#faq .showBlock').click(function(e){
 		e.preventDefault();
 		$(this).next().slideToggle();
