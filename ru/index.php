@@ -607,7 +607,7 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
 	 <!-- /.main-adm_block -->
 </div>
  <!-- /.main-adm -->
- 
+
 <div class="main-program black" id="housing">
   <div class="page__wrap">
     <div class="d-flex flex-wrap">
@@ -678,19 +678,19 @@ $GLOBALS['arrFilter'] = array("=PROPERTY_LANG_VALUE"=> "ru");
       </div>
       <div class="bx">
         <div class="main-program_cart">
-          <h2> Предоставляем льготное <i>комфортабельное жилье</i> </h2>
-          <div class="subinfo"> Для всех работников Алабуги предоставляется жилье, где есть всё, что необходимо для комфортной жизни </div>
+			<h2> Мы <i>предоставляем жилье</i> на льготных условиях: </h2>
+          <div class="subinfo"> 
+В 2025 году будет построен жилой комплекс для участниц программы «Алабуга Старт». <br>
+До завершения строительства жилого комплекса участницы будут проживать в общежитиях.
+</div>
           <div class="block">
-            <div class="ttl"> В каждой квартире есть: </div>
+            <div class="ttl"> В общежитиях есть все для необходимое для проживания: </div>
             <ul>
               <li> Холодильник </li>
-              <li> Электрическая варочная панель</li>
-              <li> Стиральная машина </li>
-              <li> Бойлер в душевой </li>
+              <li> Душевая комната</li>
               <li> Постельное белье </li>
-              <li> Подушка и теплое одеяло </li>
+              <li> Стиральные машинки </li>
             </ul>
-            <div style="padding-top: 2rem;">*расселение происходит по месту вашей работы</div>
           </div>
         </div>
         <!-- /.main-program_cart --> 

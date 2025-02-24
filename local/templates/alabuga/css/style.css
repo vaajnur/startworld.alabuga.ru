@@ -2739,3 +2739,12 @@ a:focus {
   }
 
 }
+
+.main-contact .main-contact_flex .item:last-child .main-contact_cart{
+	grid-template-rows: 10rem 0rem;
+}
+
+.main-contact .main-contact_flex .item:last-child .main-contact_cart.main-contact_gr .icon,
+.main-contact .main-contact_flex .item:last-child .main-contact_cart.main-contact_gr .icon img{
+	height: 100%;
+}

@@ -1,4 +1,15 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+$dir = $APPLICATION->GetCurDir();
+if($dir != SITE_DIR)
+{
+	define('SITE_HOME_PAGE', $dir);
+	define('LNG_ID', str_replace('/','',$dir));
+}
+else
+{
+	define('SITE_HOME_PAGE', SITE_DIR);
+	define('LNG_ID', LANGUAGE_ID);		
+}
 IncludeTemplateLangFile(__FILE__);
 define("JOIN_LINK", \COption::GetOptionString( "askaron.settings", "UF_JOIN_LINK"));
 define("LIST_FILE", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_LIST_FILE")));

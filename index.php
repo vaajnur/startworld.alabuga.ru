@@ -659,19 +659,18 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
       </div>
       <div class="bx">
         <div class="main-program_cart">
-          <h2>WE PROVIDE <i>PREFERENTIAL RATES</i> FOR COMFORTABLE ACCOMMODATION</h2>
-          <div class="subinfo">Housing is provided for all Alabuga employees, where there is everything necessary for a comfortable life </div>
+          <h2>We <i>PROVIDE ACCOMMODATION</i> at preferential rates</h2>
+          <div class="subinfo">In 2025, a new residential complex will be constructed specifically for participants of the Alabuga Start program
+			<br><br>
+				The participants will reside in hostels until the new residential complex is completed.</div>
           <div class="block">
-            <div class="ttl"> EACH APARTMENT HAS: </div>
+            <div class="ttl"> Each Flat at the residential complex is equipped with all the essentials for comfortable living: </div>
             <ul>
               <li> Fridge </li>
-              <li> Electric cooktop</li>
-              <li> Washing machine </li>
-              <li> Boiler in the shower </li>
-              <li> Bed linen</li>
-              <li> A pillow and a warm blanket </li>
+				<li>Shower room</li>
+				<li>Bedlinen</li>
+				<li>Washing machines</li>
             </ul>
-            <div style="padding-top: 2rem;">*housing is provided near your workplace</div>
           </div>
         </div>
         <!-- /.main-program_cart --> 

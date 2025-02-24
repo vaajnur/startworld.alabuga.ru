@@ -805,3 +805,7 @@
        object-fit: cover;
   }
 }
+
+.cart-group .numb {
+	white-space: nowrap;
+}

@@ -664,26 +664,24 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 			</div>
 			<div class="bx">
 				<div class="main-program_cart">
-					<h2>ON PROPOSE LE LOGEMENT CONFORTABLE DE <i>FAVEUR</i></h2>
+					<h2>Nous proposons des logements à des conditions préférentielles : </h2>
+					
 					<div class="subinfo">
-						On fournit tous les employés d’Alabouga du logement où il y a tout le nécessaire pour la vie confortable.
+					À l'automne 2025, un complexe résidentiel destiné aux participantes au programme Alabuga Start sera construit. 
+					Jusqu'à ce que la construction du complexe résidentiel soit achevée, les participantes vivront dans des dortoirs.
 					</div>
+					
 					<div class="block">
-						<div class="ttl">
-							 Chaque appartement est équipé de:
-						</div>
-						<ul>
-							<li>Réfrigérateur </li>
-							<li>Plaque électrique</li>
-							<li>Lave-linge </li>
-							<li>Chauffe-eau dans la salle de douche </li>
-							<li>Linge de lit</li>
-							<li>Oreiller et une couette </li>
-						</ul>
-						<div style="padding-top: 2rem;">
-							*L’installation se fait en fonction du lieu de travail.
-						</div>
+					<div class="ttl"> 
+					Les dortoirs disposent de tout ce qui est nécessaire à l'hébergement.  </div>
+					<ul>
+					<li>Réfrigérateur</li>
+					<li>Salle de douche</li>
+					<li>Linge de lit</li>
+					<li>Machines à laver</li>
+					</ul>
 					</div>
+
 				</div>
 				 <!-- /.main-program_cart -->
 			</div>
