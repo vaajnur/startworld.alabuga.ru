@@ -6,8 +6,8 @@ $cur = new CurrencyLoad();
 
 foreach($arResult["ITEMS"] as &$arItem)
 {
-	if($arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"] > 0)
+	if($arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"] > 0 && $arItem["PROPERTIES"]["DOLLARS"] && $arItem["PROPERTIES"]["DOLLARS"]['VALUE'])
 	{
-		$arItem['CUR_PRICE'] = $cur->exchange($arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"], 'USD');
+		$arItem['CUR_PRICE'] = $arItem["PROPERTIES"]["DOLLARS"]["VALUE"][0];
 	}
 }

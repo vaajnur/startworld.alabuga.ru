@@ -1,5 +1,4 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-ob_start();
 /** @var array $arParams */
 /** @var array $arResult */
 /** @global CMain $APPLICATION */
@@ -90,7 +89,7 @@ __IncludeLang($_SERVER["DOCUMENT_ROOT"].$templateFolder.'/lang/'.LNG_ID.'/templa
 					</div>
 					<div class="desc">
 						<?=GetMessage('INITIAL_MONTHLY_ALLOWANCE')?> <i><?=$arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"]?> <?=GetMessage('RUB')?></i>
-						<?=($arItem['CUR_PRICE'])?'<span style="color: #000;">(' . (LANGUAGE_ID == 'pt' ? 'cerca de ' : '$') . '&nbsp;'.$arItem['CUR_PRICE']. (LANGUAGE_ID == 'pt' ? ' Dólares' : '') . ')</span>':''?>
+						<?=($arItem['CUR_PRICE']) ? '<span style="color: #000;">(' . (LANGUAGE_ID == 'pt' ? 'cerca de ' : '$') . '&nbsp;'.$arItem['CUR_PRICE']. (LANGUAGE_ID == 'pt' ? ' Dólares' : '') . ')</span>' : ''?>
 					</div>
 				</div>
 				<!-- /.modal-top -->
@@ -112,7 +111,33 @@ __IncludeLang($_SERVER["DOCUMENT_ROOT"].$templateFolder.'/lang/'.LNG_ID.'/templa
 							<?=$arItem["PROPERTIES"]["STAGES_".LNG_ID]["DESCRIPTION"][$i]?>
 						</div>
 						<div class="info">
-							<?=$stage['TEXT']?>
+							<?
+							echo preg_replace_callback(
+							"/#PRICE_([\d]+)#/is".BX_UTF_PCRE_MODIFIER,
+							function ($matches) use($arItem, $i) {
+								switch(LNG_ID)
+								{
+									case 'en':
+									case 'es':
+									case 'pt':
+										$curSign = 'RUB';
+										break;
+									case 'ru':
+										$curSign = 'руб.';
+										break;
+									case 'fr':
+										$curSign = 'roubles';
+										break;
+									case 'ar':
+										$curSign = 'روبل';
+										break;
+									default:
+										$curSign = 'RUB';
+								}
+								return '<i>'.number_format((int)$matches[1], 0, '', '&nbsp;').' '.$curSign.' <font style="color: #000;">(' . (LANGUAGE_ID == 'pt' ? ' cerca de ' : '$')  . $arItem["PROPERTIES"]['DOLLARS']['VALUE'][$i] . (LANGUAGE_ID == 'pt' ? ' Dólares' : '') . ')</font></i>';
+							},
+							$stage['TEXT']);
+							?>
 						</div>
 					</div>
                     <? endforeach ?>
@@ -141,5 +166,4 @@ __IncludeLang($_SERVER["DOCUMENT_ROOT"].$templateFolder.'/lang/'.LNG_ID.'/templa
 <!-- /.main-fields -->
 <?
 $this->__component->arResult["CACHED_TPL"] = @ob_get_contents();
-ob_get_clean();
 ?>

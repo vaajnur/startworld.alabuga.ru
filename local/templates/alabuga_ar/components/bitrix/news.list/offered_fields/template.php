@@ -1,5 +1,4 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-ob_start();
 /** @var array $arParams */
 /** @var array $arResult */
 /** @global CMain $APPLICATION */
@@ -12,11 +11,12 @@ ob_start();
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+__IncludeLang($_SERVER["DOCUMENT_ROOT"].$templateFolder.'/lang/'.LNG_ID.'/template.php');
 ?>
-<div class="main-fields rtl">
+<div class="main-fields">
     <div class="page__wrap">
         <h2>
-            الحقول المعروضة
+            <?=GetMessage('BLOCK_TTL_FST')?> <?=GetMessage('BLOCK_TTL_SND')?>
         </h2>
         <div class="main-fields_block">
             <div class="d-flex flex-wrap justify-content-center">
@@ -29,7 +29,7 @@ $this->setFrameMode(true);
         <div class="cart-fields">
             <div class="cart-fields_top">
                 <div class="name">                    
-                	<?=$arItem["PROPERTIES"]["NAME_".LANGUAGE_ID]["VALUE"]?>
+                	<?=$arItem["PROPERTIES"]["NAME_".LNG_ID]["VALUE"]?>
                 </div>
                 <!-- /.name -->
 
@@ -48,22 +48,22 @@ $this->setFrameMode(true);
                     <div class="subname">                    
                         <?=GetMessage('PROGRAM_DURATION')?>:
                     </div>
-                    <div class="desc">                        
-                		<?=$arItem["PROPERTIES"]["DURATION_".LANGUAGE_ID]["VALUE"]?>
+                    <div class="desc">
+                		<?=(LNG_ID == 'pt' ? 'Até' : '');?> <?=$arItem["PROPERTIES"]["DURATION_".LNG_ID]["VALUE"]?>
                     </div>
                 </div>
                 <div class="group">
                     <div class="subname">
                         <?=GetMessage('INITIAL_MONTHLY_ALLOWANCE')?>
                     </div>
-                    <div class="desc">                        
-                		<?=str_replace(' ', '&nbsp;', $arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"])?> <?=GetMessage('RUB')?>
-						<?=($arItem['CUR_PRICE'])?'<span style="color: #000;">('.$arItem['CUR_PRICE'].'$)</span>':''?>
+                    <div class="desc">                  
+                		<?=$arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"]?> <?=GetMessage('RUB')?>
+						<?=($arItem['CUR_PRICE'])?'<span style="color: #000;">(' . (LANGUAGE_ID == 'pt' ? 'cerca de ' : '$') . '&nbsp;' . $arItem['CUR_PRICE'] . (LANGUAGE_ID == 'pt' ? ' Dólares' : '') . ')</span>':''?>
                     </div>
                 </div>
             </div>
             <div class="cart-fields_btn">
-                <a href="javascript:;" class="page__btn page__btn--curr getModal">
+                <a title="MORE" href="javascript:;" class="page__btn page__btn--curr getModal">
                     <span>
 	                    <?=GetMessage('MORE_BTN')?>
                     </span>
@@ -82,43 +82,69 @@ $this->setFrameMode(true);
 				<!-- /.modal-close -->
 				<div class="modal-top">
 					<div class="ttl">
-	                	<?=$arItem["PROPERTIES"]["NAME_".LANGUAGE_ID]["VALUE"]?>
+	                	<?=$arItem["PROPERTIES"]["NAME_".LNG_ID]["VALUE"]?>
 					</div>
 					<div class="desc">
-						<?=GetMessage('PROGRAM_DURATION')?>: <i><?=$arItem["PROPERTIES"]["DURATION_".LANGUAGE_ID]["VALUE"]?></i>
+						<?=GetMessage('PROGRAM_DURATION')?>: <i><?=(LNG_ID == 'pt' ? 'Até' : '');?> <?=$arItem["PROPERTIES"]["DURATION_".LNG_ID]["VALUE"]?></i>
 					</div>
 					<div class="desc">
-						<?=GetMessage('INITIAL_MONTHLY_ALLOWANCE')?> <i><?=str_replace(' ', '&nbsp;', $arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"])?> <?=GetMessage('RUB')?></i>
-						<?=($arItem['CUR_PRICE'])?'<span style="color: #000;">('.$arItem['CUR_PRICE'].'$)</span>':''?>
+						<?=GetMessage('INITIAL_MONTHLY_ALLOWANCE')?> <i><?=$arItem["PROPERTIES"]["ALLOWANCE"]["VALUE"]?> <?=GetMessage('RUB')?></i>
+						<?=($arItem['CUR_PRICE']) ? '<span style="color: #000;">(' . (LANGUAGE_ID == 'pt' ? 'cerca de ' : '$') . '&nbsp;'.$arItem['CUR_PRICE']. (LANGUAGE_ID == 'pt' ? ' Dólares' : '') . ')</span>' : ''?>
 					</div>
 				</div>
 				<!-- /.modal-top -->
-				<div class="modal-mid rtl">
+				<div class="modal-mid">
 					<div class="name">
 						<?=GetMessage('FINAL_RESULTS')?>
 					</div>
-                    <? foreach($arItem["PROPERTIES"]["RESULTS_".LANGUAGE_ID]["VALUE"] as $results):?>
+                    <? foreach($arItem["PROPERTIES"]["RESULTS_".LNG_ID]["VALUE"] as $results):?>
 					<div class="desc">
 						<?=$results?>
 					</div>
                     <? endforeach ?>
 				</div>
 				<!-- /.modal-mid -->
-				<div class="modal-bottom rtl">
-                   	<? foreach($arItem["PROPERTIES"]["STAGES_".LANGUAGE_ID]["~VALUE"] as $i => $stage):?>
+				<div class="modal-bottom">
+                   	<? foreach($arItem["PROPERTIES"]["STAGES_".LNG_ID]["~VALUE"] as $i => $stage):?>
 					<div class="stage">
 						<div class="name">
-							<?=$arItem["PROPERTIES"]["STAGES_".LANGUAGE_ID]["DESCRIPTION"][$i]?>
+							<?=$arItem["PROPERTIES"]["STAGES_".LNG_ID]["DESCRIPTION"][$i]?>
 						</div>
 						<div class="info">
-							<?=$stage['TEXT']?>
+							<?
+							echo preg_replace_callback(
+							"/#PRICE_([\d]+)#/is".BX_UTF_PCRE_MODIFIER,
+							function ($matches) use($arItem, $i) {
+								switch(LNG_ID)
+								{
+									case 'en':
+									case 'es':
+									case 'pt':
+										$curSign = 'RUB';
+										break;
+									case 'ru':
+										$curSign = 'руб.';
+										break;
+									case 'fr':
+										$curSign = 'roubles';
+										break;
+									case 'ar':
+										$curSign = 'روبل';
+										break;
+									default:
+										$curSign = 'RUB';
+								}
+								return '<i>'.number_format((int)$matches[1], 0, '', '&nbsp;').' '.$curSign.' <font style="color: #000;">(' . (LANGUAGE_ID == 'pt' ? ' cerca de ' : '$')  . $arItem["PROPERTIES"]['DOLLARS']['VALUE'][$i] . (LANGUAGE_ID == 'pt' ? ' Dólares' : '') . ')</font></i>';
+							},
+							$stage['TEXT']);
+							?>
 						</div>
 					</div>
                     <? endforeach ?>
 				</div>
 				<!-- /.modal-bottom -->
 				<div class="modal-btn">
-					<a href="<?=JOIN_LINK?>" data-join target="_blank" class="page__btn page__btn--main">
+					<a title="APPLY" href="<?if ($APPLICATION->GetCurDir()=='/ru/') {echo JOIN_LINK_RU;}else{echo JOIN_LINK;}?>" data-join target="_blank" class="page__btn page__btn--main">
 						<span>							
 		                    <?=GetMessage('APPLY_BTN')?>
 						</span>
@@ -140,5 +166,4 @@ $this->setFrameMode(true);
 <!-- /.main-fields -->
 <?
 $this->__component->arResult["CACHED_TPL"] = @ob_get_contents();
-ob_get_clean();
 ?>
