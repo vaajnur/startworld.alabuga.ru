@@ -227,7 +227,8 @@ define("FILES_LINK", \COption::GetOptionString( "askaron.settings", "UF_FILES_LI
 			<main class="main flex-fill">
             	<div class="main_ban">
 					<div class="image js-ban">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/ban.jpg" alt=" Relocation program to Russia for work experience " class="mw-100 d-block">
+						<!--<img src="<?=SITE_TEMPLATE_PATH?>/img/ban.jpg" alt=" Relocation program to Russia for work experience " class="mw-100 d-block">-->
+						<img src="<?=SITE_TEMPLATE_PATH?>/img/as_mir.jpg" alt=" Relocation program to Russia for work experience " class="mw-100 d-block">
 					</div>
 					<div class="main_ban-bx">
 						<div class="page__wrap">

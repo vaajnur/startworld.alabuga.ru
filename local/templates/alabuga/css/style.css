@@ -2749,7 +2749,63 @@ a:focus {
 	height: 81%;
 }
 
-.hosing_slider .item .head_txt{
+.hosing_slider .item .head_txt {
   background-color: transparent;
 }
 
+.grant-program .forms .page__btn {
+  width: 100%;
+}
+
+.cart-fields .name.grant-program-numbs {
+  font-size: 58px;
+  font-weight: 500;
+}
+
+.grant-program .notes {
+  font-weight: 700;
+}
+
+.grant-list li{
+  display: flex;
+  flex-direction: row;
+	padding: 14px 0px;
+}
+
+.grant-list li .icon{
+  min-width: 30px;
+  margin-right: 30px;
+}
+
+.my-10 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.mb-10 {
+	margin-bottom: 40px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.color-blue{
+	color: #005DAC !important;
+}
+
+.text-lg {
+	font-size: 24px !important;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.max-w-40{
+	max-width: 40% !important;
+}
+
+.pl-0 {
+	padding-left: 0;
+}

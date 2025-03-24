@@ -138,7 +138,8 @@ $(function() {
 
 	});
 
-	$('.getModal').click(function(){
+	$('.getModal').click(function(ev){
+		ev.preventDefault();
 		var bx = $(this).closest('.bx');
 		$('.modal').removeClass('active');
 		$('.modal',bx).addClass('active');
