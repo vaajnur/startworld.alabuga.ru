@@ -1051,4 +1051,8 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 	)
 );?>
 </div>
+
+
+<? include $_SERVER['DOCUMENT_ROOT'] . "/grant_program.php"; ?>
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

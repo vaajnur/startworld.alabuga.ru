@@ -208,7 +208,7 @@
 	                <p>Подробную информацию о сроках и номинациях Грантового конкурса, количестве квот, условиях участия и проведении выплат см. в Положении о Грантовом конкурсе.</p>
 
 			        <div class="cart-fields_btn">
-		                <a target="_blank" href="/upload/Приказ_№316_от_10_03_2025_о_грантовом_конкурсе_Алабуга_Старт.pdf" class="page__btn page__btn--curr">
+		                <a target="_blank" href="/upload/The position of the_grant_competition_alabuga_Start.pdf" class="page__btn page__btn--curr">
 		                    <span>Документы</span>
 		                </a>
 		            </div>

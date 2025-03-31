@@ -1048,4 +1048,8 @@ $APPLICATION->IncludeComponent(
 	)
 );?>
 </div>
+
+
+<? include $_SERVER['DOCUMENT_ROOT'] . "/ru/grant_program.php"; ?>
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
