@@ -5,76 +5,21 @@ $APPLICATION->SetPageProperty("title", "ALABUGA START WORLD - Relocation program
 $APPLICATION->SetPageProperty("tags", "ALABUGA START WORLD");
 $APPLICATION->SetPageProperty("keywords", "ALABUGA START WORLD", "АЛАБУГА СТАРТ ВОРЛД", "АЛАБУГА СТАРТ ВОРД");
 $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique opportunity for young and talented people from all over the world to build a career and change their lives for the better"); 
-?><div class="main-zone" id="company">
+?>
+
+<div class="main-zone" id="company">
+	
 	<div class="page__wrap">
+
 		<h2> <i>The most successful in Russia</i> special economic zone «Alabuga» attracts investors with a number of doubtless advantages. </h2>
+		
 		<div class="text">
 			<p>
 				 Companies in «Alabuga» are exempted from paying property, land and transport taxes, income tax is only 2%. Under the current free customs zone regime, imported equipment used on the territory of «Alabuga» is exempted from customs duties and VAT.
 			</p>
 		</div>
-        <? $APPLICATION->IncludeComponent(
-			"bitrix:news.list",
-			"news_slider",
-			Array(
-				"ACTIVE_DATE_FORMAT" => "d.m.Y",
-				"ADD_SECTIONS_CHAIN" => "N",
-				"AJAX_MODE" => "N",
-				"AJAX_OPTION_ADDITIONAL" => "",
-				"AJAX_OPTION_HISTORY" => "N",
-				"AJAX_OPTION_JUMP" => "N",
-				"AJAX_OPTION_SHADOW" => "Y",
-				"AJAX_OPTION_STYLE" => "Y",
-				"CACHE_FILTER" => "N",
-				"CACHE_GROUPS" => "Y",
-				"CACHE_TIME" => "36000000",
-				"CACHE_TYPE" => "A",
-				"CHECK_DATES" => "Y",
-				"COMPONENT_TEMPLATE" => "news_slider",
-				"DETAIL_URL" => "",
-				"DISPLAY_BOTTOM_PAGER" => "N",
-				"DISPLAY_DATE" => "N",
-				"DISPLAY_NAME" => "N",
-				"DISPLAY_PANEL" => "N",
-				"DISPLAY_PICTURE" => "Y",
-				"DISPLAY_PREVIEW_TEXT" => "N",
-				"DISPLAY_TOP_PAGER" => "N",
-				"FIELD_CODE" => array(0=>"DETAIL_TEXT",1=>"DETAIL_PICTURE",),
-				"USE_FILTER" => "Y",
-				"FILTER_NAME" => "arrFilter",
-				"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-				"IBLOCK_ID" => "7",
-				"IBLOCK_TYPE" => "news",
-				"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-				"INCLUDE_SUBSECTIONS" => "N",
-				"MESSAGE_404" => "",
-				"NEWS_COUNT" => "20",
-				"PAGER_BASE_LINK_ENABLE" => "N",
-				"PAGER_DESC_NUMBERING" => "N",
-				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
-				"PAGER_SHOW_ALL" => "N",
-				"PAGER_SHOW_ALWAYS" => "N",
-				"PAGER_TEMPLATE" => "",
-				"PAGER_TITLE" => "Новости",
-				"PARENT_SECTION" => "",
-				"PARENT_SECTION_CODE" => "",
-				"PREVIEW_TRUNCATE_LEN" => "",
-				"PROPERTY_CODE" => array(0=>"GALLERY",1=>"VIDEO",2=>"",3=>"",4=>"",),
-				"SET_BROWSER_TITLE" => "N",
-				"SET_LAST_MODIFIED" => "N",
-				"SET_META_DESCRIPTION" => "N",
-				"SET_META_KEYWORDS" => "N",
-				"SET_STATUS_404" => "N",
-				"SET_TITLE" => "N",
-				"SHOW_404" => "N",
-				"SORT_BY1" => "ACTIVE_FROM",
-				"SORT_BY2" => "ID",
-				"SORT_ORDER1" => "DESC",
-				"SORT_ORDER2" => "DESC",
-				"STRICT_SECTION_CHECK" => "N"
-			)
-		);
-		?>
+
+		<!-- KEY INDICATORS -->
 		<div class="main-zone_block">
 			<h3>
 			«ALABUGA» SEZ KEY INDICATORS </h3>
@@ -103,7 +48,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 					<div class="bx">
 						<div class="cart-group">
 							<div class="numb">
- <i>＄</i><?=\COption::GetOptionString( "askaron.settings", "UF_ACT_INVEST");?><i>bln</i>
+ 								<i>＄</i><?=\COption::GetOptionString( "askaron.settings", "UF_ACT_INVEST");?><i>bln</i>
 							</div>
 							<div class="txt">
 								 Actually invested by residents
@@ -113,7 +58,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 					<div class="bx">
 						<div class="cart-group">
 							<div class="numb">
- <i>＄</i><?=\COption::GetOptionString( "askaron.settings", "UF_RES_REV");?><i>bln</i>
+ 								<i>＄</i><?=\COption::GetOptionString( "askaron.settings", "UF_RES_REV");?><i>bln</i>
 							</div>
 							<div class="txt">
 								 Residents’ revenue as of January 10, 2024
@@ -139,8 +84,141 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 			 <!-- /.main-zone_bottom -->
 		</div>
 		 <!-- /.main-zone_block -->
+
+		<? include $_SERVER['DOCUMENT_ROOT'] . "/grant_program.php"; ?>
+
+		<div id="news">
+	        <? 
+	        // Новости
+	        $APPLICATION->IncludeComponent(
+				"bitrix:news.list",
+				"news_slider",
+				Array(
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"ADD_SECTIONS_CHAIN" => "N",
+					"AJAX_MODE" => "N",
+					"AJAX_OPTION_ADDITIONAL" => "",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_SHADOW" => "Y",
+					"AJAX_OPTION_STYLE" => "Y",
+					"CACHE_FILTER" => "N",
+					"CACHE_GROUPS" => "Y",
+					"CACHE_TIME" => "36000000",
+					"CACHE_TYPE" => "A",
+					"CHECK_DATES" => "Y",
+					"COMPONENT_TEMPLATE" => "news_slider",
+					"DETAIL_URL" => "",
+					"DISPLAY_BOTTOM_PAGER" => "N",
+					"DISPLAY_DATE" => "N",
+					"DISPLAY_NAME" => "N",
+					"DISPLAY_PANEL" => "N",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "N",
+					"DISPLAY_TOP_PAGER" => "N",
+					"FIELD_CODE" => array(0=>"DETAIL_TEXT",1=>"DETAIL_PICTURE",),
+					"USE_FILTER" => "Y",
+					"FILTER_NAME" => "arrFilter",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+					"IBLOCK_ID" => "7",
+					"IBLOCK_TYPE" => "news",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+					"INCLUDE_SUBSECTIONS" => "N",
+					"MESSAGE_404" => "",
+					"NEWS_COUNT" => "20",
+					"PAGER_BASE_LINK_ENABLE" => "N",
+					"PAGER_DESC_NUMBERING" => "N",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
+					"PAGER_SHOW_ALL" => "N",
+					"PAGER_SHOW_ALWAYS" => "N",
+					"PAGER_TEMPLATE" => "",
+					"PAGER_TITLE" => "Новости",
+					"PARENT_SECTION" => "",
+					"PARENT_SECTION_CODE" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"PROPERTY_CODE" => array(0=>"GALLERY",1=>"VIDEO",2=>"",3=>"",4=>"",),
+					"SET_BROWSER_TITLE" => "N",
+					"SET_LAST_MODIFIED" => "N",
+					"SET_META_DESCRIPTION" => "N",
+					"SET_META_KEYWORDS" => "N",
+					"SET_STATUS_404" => "N",
+					"SET_TITLE" => "N",
+					"SHOW_404" => "N",
+					"SORT_BY1" => "ACTIVE_FROM",
+					"SORT_BY2" => "ID",
+					"SORT_ORDER1" => "DESC",
+					"SORT_ORDER2" => "DESC",
+					"STRICT_SECTION_CHECK" => "N"
+				)
+			);
+			?>
+		</div>
+
+
+
 	</div>
 </div>
+
+<!-- Участники из 44 стран -->
+<div class="main-plan">
+	<div class="main-plan_item">
+		<div class="image js-ban">
+ 			<img src="/local/templates/alabuga/img/ban2.jpg" alt="PARTICIPANTS FROM 44 COUNTRIES" class="mw-100 d-block">
+		</div>
+		<div class="main-plan_block">
+			<div class="page__wrap">
+				<div class="d-flex flex-wrap justify-content-between">
+					<div class="bx">
+						<h2>
+						PARTICIPANTS FROM 44 COUNTRIES SUCH AS MOZAMBIQUE, COLOMBIA, MALI, LESOTHO, ZIMBABWE, BENIN, RWANDA, TANZANIA, TUNISIA, SOUTH SUDAN, DR CONGO, SRI LANKA ETC. WERE EMPLOYED IN 2024 UNDER THE ALABUGA START PROGRAMME. </h2>
+					</div>
+					<div class="bx">
+						<div class="main-plan_cart">
+							<div class="ttl">
+								 2025 recruitment plan:
+							</div>
+							<div class="list">
+								<ul>
+									<li>
+									<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_SPEC");?> specialties </li>
+									<li>
+									<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_CNTR");?> countries </li>
+								</ul>
+							</div>
+ 							<a title="Join" href="<?=JOIN_LINK?>" target="_blank" class="page__btn page__btn--main" data-join> Join </a>
+						</div>
+						 <!-- /.main-plan_cart -->
+					</div>
+				</div>
+			</div>
+		</div>
+		 <!-- /.main-plan_block -->
+	</div>
+	 <!-- /.main-plan_item -->
+	<div class="main-plan_bottom">
+		<div class="main-plan_cart">
+			<div class="ttl">
+				 2025 recruitment plan:
+			</div>
+			<div class="list">
+				<ul>
+					<li>
+					<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_SPEC");?> specialties </li>
+					<li>
+					<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_CNTR");?> countries </li>
+				</ul>
+			</div>
+ 			<a title="Join" href="<?=JOIN_LINK?>" target="_blank" class="page__btn page__btn--main" data-join> Join </a>
+		</div>
+		 <!-- /.main-plan_cart -->
+	</div>
+	 <!-- /.main-plan_bottom -->
+</div>
+ <!-- /.main-plan -->
+
+
+
+<!-- Video block -->
 <div class="main-video" id="video">
 	<div class="page__wrap">
 		 <?
@@ -209,129 +287,82 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 	</div>
 </div>
  <!-- /.main-video --> <!-- /.main-zone -->
-<div class="main-plan">
-	<div class="main-plan_item">
-		<div class="image js-ban">
- <img src="/local/templates/alabuga/img/ban2.jpg" alt="PARTICIPANTS FROM 44 COUNTRIES" class="mw-100 d-block">
-		</div>
-		<div class="main-plan_block">
-			<div class="page__wrap">
-				<div class="d-flex flex-wrap justify-content-between">
-					<div class="bx">
-						<h2>
-						PARTICIPANTS FROM 44 COUNTRIES SUCH AS MOZAMBIQUE, COLOMBIA, MALI, LESOTHO, ZIMBABWE, BENIN, RWANDA, TANZANIA, TUNISIA, SOUTH SUDAN, DR CONGO, SRI LANKA ETC. WERE EMPLOYED IN 2024 UNDER THE ALABUGA START PROGRAMME. </h2>
-					</div>
-					<div class="bx">
-						<div class="main-plan_cart">
-							<div class="ttl">
-								 2025 recruitment plan:
-							</div>
-							<div class="list">
-								<ul>
-									<li>
-									<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_SPEC");?> specialties </li>
-									<li>
-									<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_CNTR");?> countries </li>
-								</ul>
-							</div>
- <a title="Join" href="<?=JOIN_LINK?>" target="_blank" class="page__btn page__btn--main" data-join> Join </a>
-						</div>
-						 <!-- /.main-plan_cart -->
-					</div>
-				</div>
-			</div>
-		</div>
-		 <!-- /.main-plan_block -->
-	</div>
-	 <!-- /.main-plan_item -->
-	<div class="main-plan_bottom">
-		<div class="main-plan_cart">
-			<div class="ttl">
-				 2025 recruitment plan:
-			</div>
-			<div class="list">
-				<ul>
-					<li>
-					<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_SPEC");?> specialties </li>
-					<li>
-					<?=\COption::GetOptionString( "askaron.settings", "UF_PLAN_CNTR");?> countries </li>
-				</ul>
-			</div>
- <a title="Join" href="<?=JOIN_LINK?>" target="_blank" class="page__btn page__btn--main" data-join> Join </a>
-		</div>
-		 <!-- /.main-plan_cart -->
-	</div>
-	 <!-- /.main-plan_bottom -->
-</div>
- <!-- /.main-plan -->
+
+
+<!-- Отзывы -->
 <div class="main-feedback" id="feedback">
 	<div class="page__wrap">
 		<div class="main-feedback_top">
 			<h2> <i>Feedback</i> from our participants </h2>
 		</div>
-		 <!-- /.main-feedback_top --> <?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"feedback_slider",
-	Array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"AJAX_MODE" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_SHADOW" => "Y",
-		"AJAX_OPTION_STYLE" => "Y",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"CHECK_DATES" => "Y",
-		"COMPONENT_TEMPLATE" => "feedback_slider",
-		"DETAIL_URL" => "",
-		"DISPLAY_BOTTOM_PAGER" => "N",
-		"DISPLAY_DATE" => "N",
-		"DISPLAY_NAME" => "N",
-		"DISPLAY_PANEL" => "N",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "N",
-		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"",1=>"",),
-		"FILTER_NAME" => "",
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "3",
-		"IBLOCK_TYPE" => "news",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"INCLUDE_SUBSECTIONS" => "N",
-		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "20",
-		"PAGER_BASE_LINK_ENABLE" => "N",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
-		"PAGER_SHOW_ALL" => "N",
-		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => "",
-		"PAGER_TITLE" => "Новости",
-		"PARENT_SECTION" => "",
-		"PARENT_SECTION_CODE" => "",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"NAME_en",1=>"COUNTRY_en",2=>"REVIEW_en",3=>"",4=>"",5=>"",6=>"",),
-		"SET_BROWSER_TITLE" => "N",
-		"SET_LAST_MODIFIED" => "N",
-		"SET_META_DESCRIPTION" => "N",
-		"SET_META_KEYWORDS" => "N",
-		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "N",
-		"SHOW_404" => "N",
-		"SORT_BY1" => "SORT",
-		"SORT_BY2" => "ID",
-		"SORT_ORDER1" => "ASC",
-		"SORT_ORDER2" => "DESC",
-		"STRICT_SECTION_CHECK" => "N"
-	)
-);?>
+		 <!-- /.main-feedback_top --> 
+		 <?
+		 	$APPLICATION->IncludeComponent(
+			"bitrix:news.list",
+			"feedback_slider",
+				Array(
+					"ACTIVE_DATE_FORMAT" => "d.m.Y",
+					"ADD_SECTIONS_CHAIN" => "N",
+					"AJAX_MODE" => "N",
+					"AJAX_OPTION_ADDITIONAL" => "",
+					"AJAX_OPTION_HISTORY" => "N",
+					"AJAX_OPTION_JUMP" => "N",
+					"AJAX_OPTION_SHADOW" => "Y",
+					"AJAX_OPTION_STYLE" => "Y",
+					"CACHE_FILTER" => "N",
+					"CACHE_GROUPS" => "Y",
+					"CACHE_TIME" => "36000000",
+					"CACHE_TYPE" => "A",
+					"CHECK_DATES" => "Y",
+					"COMPONENT_TEMPLATE" => "feedback_slider",
+					"DETAIL_URL" => "",
+					"DISPLAY_BOTTOM_PAGER" => "N",
+					"DISPLAY_DATE" => "N",
+					"DISPLAY_NAME" => "N",
+					"DISPLAY_PANEL" => "N",
+					"DISPLAY_PICTURE" => "Y",
+					"DISPLAY_PREVIEW_TEXT" => "N",
+					"DISPLAY_TOP_PAGER" => "N",
+					"FIELD_CODE" => array(0=>"",1=>"",),
+					"FILTER_NAME" => "",
+					"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+					"IBLOCK_ID" => "3",
+					"IBLOCK_TYPE" => "news",
+					"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+					"INCLUDE_SUBSECTIONS" => "N",
+					"MESSAGE_404" => "",
+					"NEWS_COUNT" => "20",
+					"PAGER_BASE_LINK_ENABLE" => "N",
+					"PAGER_DESC_NUMBERING" => "N",
+					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
+					"PAGER_SHOW_ALL" => "N",
+					"PAGER_SHOW_ALWAYS" => "N",
+					"PAGER_TEMPLATE" => "",
+					"PAGER_TITLE" => "Новости",
+					"PARENT_SECTION" => "",
+					"PARENT_SECTION_CODE" => "",
+					"PREVIEW_TRUNCATE_LEN" => "",
+					"PROPERTY_CODE" => array(0=>"NAME_en",1=>"COUNTRY_en",2=>"REVIEW_en",3=>"",4=>"",5=>"",6=>"",),
+					"SET_BROWSER_TITLE" => "N",
+					"SET_LAST_MODIFIED" => "N",
+					"SET_META_DESCRIPTION" => "N",
+					"SET_META_KEYWORDS" => "N",
+					"SET_STATUS_404" => "N",
+					"SET_TITLE" => "N",
+					"SHOW_404" => "N",
+					"SORT_BY1" => "ACTIVE_FROM",
+					"SORT_BY2" => "SORT",
+					"SORT_ORDER1" => "ASC",
+					"SORT_ORDER2" => "DESC",
+					"STRICT_SECTION_CHECK" => "N"
+				)
+			);?>
 	</div>
 </div>
  <!-- /.main-feedback -->
+
+
+<!-- Синий блок -->
 <div class="main-start">
 	<div class="page__wrap">
 		<h1>
@@ -425,12 +456,14 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 	</div>
 </div>
  <!-- /.main-start -->
+
+<!-- Девушка рабочий Program benefits -->
 <div class="main-program" id="benefits">
 	<div class="page__wrap">
 		<div class="d-flex flex-wrap">
 			<div class="bx">
 				<div class="image js-ban">
- <img src="/local/templates/alabuga/img/img.jpg" alt="Program benefits" class="mw-100 d-block">
+ 					<img src="/local/templates/alabuga/img/img.jpg" alt="Program benefits" class="mw-100 d-block">
 				</div>
 			</div>
 			<div class="bx">
@@ -441,43 +474,43 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 						<ul>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/graduation-cap_icon.svg" alt="Professional training" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/graduation-cap_icon.svg" alt="Professional training" class="mw-100 d-block">
 							</div>
 							 Professional training </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/bubble-chat_icon.svg" alt="Russian language lessons" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/bubble-chat_icon.svg" alt="Russian language lessons" class="mw-100 d-block">
 							</div>
-								<a title="Russian language lessons" href="https://lyl.su/UnoG" target="_blank">Russian language lessons</a> </li>
+								<a title="Russian language lessons" href="https://worldcourses.alabuga.ru/en" target="_blank">Russian language lessons</a> </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/house-key_icon.svg" alt="Preferential accommodation in comfortable" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/house-key_icon.svg" alt="Preferential accommodation in comfortable" class="mw-100 d-block">
 							</div>
 							 Preferential accommodation in comfortable <a title="hostels" href="#housing" class="gtSteps" target="_blank">hostels</a> </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/wallet_icon.svg" alt="initial monthly allowance" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/wallet_icon.svg" alt="initial monthly allowance" class="mw-100 d-block">
 							</div>
                             <? $rub = \COption::GetOptionString( "askaron.settings", "UF_MTH_ALW"); $cur = new CurrencyLoad(); ?>
-							 <?=str_replace(' ', '&nbsp;', $rub);?> rub ($<?=$cur->exchange($rub, 'USD');?>) initial monthly allowance </li>
+							 <?=str_replace(' ', '&nbsp;', $rub);?> rub ($<?//=$cur->exchange($rub, 'USD');?>860) initial monthly allowance </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/plane_icon.svg" alt="Paid flight to Russia" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/plane_icon.svg" alt="Paid flight to Russia" class="mw-100 d-block">
 							</div>
 							 Paid flight to Russia </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/treatment_icon.svg" alt="Voluntary health insurance" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/treatment_icon.svg" alt="Voluntary health insurance" class="mw-100 d-block">
 							</div>
 							 Voluntary health insurance </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/transfer_icon.svg" alt="Transfer" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/transfer_icon.svg" alt="Transfer" class="mw-100 d-block">
 							</div>
 							 Transfer </li>
 						</ul>
 					</div>
- <a title="apply" href="<?=CV_FORM?>" target="_blank" class="page__btn page__btn--main" data-join> apply </a>
+ 					<a title="apply" href="<?=CV_FORM?>" target="_blank" class="page__btn page__btn--main" data-join> apply </a>
 				</div>
 				 <!-- /.main-program_cart -->
 			</div>
@@ -485,68 +518,82 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 	</div>
 </div>
  <!-- /.main-program -->
+
+
+<!-- Направления -->
 <div id="fields">
-<?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"offered_fields",
-	Array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"AJAX_MODE" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_SHADOW" => "Y",
-		"AJAX_OPTION_STYLE" => "Y",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "3600",
-		"CACHE_TYPE" => "A",
-		"CHECK_DATES" => "Y",
-		"COMPONENT_TEMPLATE" => ".default",
-		"DETAIL_URL" => "",
-		"DISPLAY_BOTTOM_PAGER" => "N",
-		"DISPLAY_DATE" => "N",
-		"DISPLAY_NAME" => "N",
-		"DISPLAY_PANEL" => "N",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "N",
-		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"",1=>"",),
-		"FILTER_NAME" => "",
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "4",
-		"IBLOCK_TYPE" => "news",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"INCLUDE_SUBSECTIONS" => "N",
-		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "20",
-		"PAGER_BASE_LINK_ENABLE" => "N",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
-		"PAGER_SHOW_ALL" => "N",
-		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => "",
-		"PAGER_TITLE" => "Новости",
-		"PARENT_SECTION" => "",
-		"PARENT_SECTION_CODE" => "",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"ALLOWANCE",1=>"",),
-		"SET_BROWSER_TITLE" => "N",
-		"SET_LAST_MODIFIED" => "N",
-		"SET_META_DESCRIPTION" => "N",
-		"SET_META_KEYWORDS" => "N",
-		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "N",
-		"SHOW_404" => "N",
-		"SORT_BY1" => "SORT",
-		"SORT_BY2" => "NAME",
-		"SORT_ORDER1" => "ASC",
-		"SORT_ORDER2" => "ASC",
-		"STRICT_SECTION_CHECK" => "N"
-	)
-);?>
+	<?
+	$APPLICATION->IncludeComponent(
+		"bitrix:news.list",
+		"offered_fields",
+		Array(
+			"ACTIVE_DATE_FORMAT" => "d.m.Y",
+			"ADD_SECTIONS_CHAIN" => "N",
+			"AJAX_MODE" => "N",
+			"AJAX_OPTION_ADDITIONAL" => "",
+			"AJAX_OPTION_HISTORY" => "N",
+			"AJAX_OPTION_JUMP" => "N",
+			"AJAX_OPTION_SHADOW" => "Y",
+			"AJAX_OPTION_STYLE" => "Y",
+			"CACHE_FILTER" => "N",
+			"CACHE_GROUPS" => "Y",
+			"CACHE_TIME" => "3600",
+			"CACHE_TYPE" => "A",
+			"CHECK_DATES" => "Y",
+			"COMPONENT_TEMPLATE" => ".default",
+			"DETAIL_URL" => "",
+			"DISPLAY_BOTTOM_PAGER" => "N",
+			"DISPLAY_DATE" => "N",
+			"DISPLAY_NAME" => "N",
+			"DISPLAY_PANEL" => "N",
+			"DISPLAY_PICTURE" => "Y",
+			"DISPLAY_PREVIEW_TEXT" => "N",
+			"DISPLAY_TOP_PAGER" => "N",
+			"FIELD_CODE" => array(0=>"",1=>"",),
+			"FILTER_NAME" => "",
+			"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+			"IBLOCK_ID" => "4",
+			"IBLOCK_TYPE" => "news",
+			"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+			"INCLUDE_SUBSECTIONS" => "N",
+			"MESSAGE_404" => "",
+			"NEWS_COUNT" => "20",
+			"PAGER_BASE_LINK_ENABLE" => "N",
+			"PAGER_DESC_NUMBERING" => "N",
+			"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
+			"PAGER_SHOW_ALL" => "N",
+			"PAGER_SHOW_ALWAYS" => "N",
+			"PAGER_TEMPLATE" => "",
+			"PAGER_TITLE" => "Новости",
+			"PARENT_SECTION" => "",
+			"PARENT_SECTION_CODE" => "",
+			"PREVIEW_TRUNCATE_LEN" => "",
+			"PROPERTY_CODE" => array(0=>"ALLOWANCE",1=>"",),
+			"SET_BROWSER_TITLE" => "N",
+			"SET_LAST_MODIFIED" => "N",
+			"SET_META_DESCRIPTION" => "N",
+			"SET_META_KEYWORDS" => "N",
+			"SET_STATUS_404" => "N",
+			"SET_TITLE" => "N",
+			"SHOW_404" => "N",
+			"SORT_BY1" => "SORT",
+			"SORT_BY2" => "NAME",
+			"SORT_ORDER1" => "ASC",
+			"SORT_ORDER2" => "ASC",
+			"STRICT_SECTION_CHECK" => "N"
+		)
+	);?>
+	<div class="page__wrap">
+		<div class="d-flex1 flex-wrap">
+			<p>* At the rate of $1=100₽ </p>
+			<p>** At 100% fulfillment of the KPI objectives</p>
+		</div>
+	</div>
+
 </div>
+
+
+<!-- Admission requirements Синий блок 2 девушки -->
 <div class="main-adm" id="admission">
 	<div class="main-adm_block">
 		<div class="page__wrap">
@@ -559,11 +606,11 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 							<li>
 							Age: <i>18-22 years old females</i> </li>
 							<li>
-							Citizenship: <i>countries from our <a title="countries" href="<?=SITE_TEMPLATE_PATH?>/include/countries.php" data-fancybox data-type="iframe">list</a></i> </li>
+							Citizenship: <br class="visible-mobile"> <i>countries from our <a title="countries" href="<?=SITE_TEMPLATE_PATH?>/include/countries.php" data-fancybox data-type="iframe">list</a></i> </li>
 							<li>
-							Education: <i>at least 9 classes (secondary school according to the russian educational system)</i> </li>
+							Education: <br class="visible-mobile"><i>at least 9 classes (secondary school according to the russian educational system)</i> </li>
 							<li>
-							Valid international passport <i>If there is no PASSPORT yet you can apply for it during application period so it is ready by the time you enter the ALABUGA START PROGRAM </i> </li>
+							Valid international passport <br class="visible-mobile"><i>If there is no PASSPORT yet you can apply for it during application period so it is ready by the time you enter the ALABUGA START PROGRAM </i> </li>
 							<li>
 							No serious chronic diseases </li>
 						</ul>
@@ -572,13 +619,13 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 						 Program participants pass a complete medical examination on arrival. The participant will not be allowed to work if a chronic disease is detected.
 					</div>
 					<div class="main-adm_btn">
- <a title="APPLY" href="<?=JOIN_LINK?>" target="_blank" class="page__btn page__btn--curr" data-join> APPLY </a>
+ 						<a title="APPLY" href="<?=JOIN_LINK?>" target="_blank" class="page__btn page__btn--curr" data-join> APPLY </a>
 					</div>
 					 <!-- /.main-adm_btn -->
 				</div>
 				<div class="bx">
 					<div class="image">
- <img src="/local/templates/alabuga/img/img2.png" alt="Admission requirements" class="mw-100 d-block">
+ 						<img src="/local/templates/alabuga/img/img2.png" alt="Admission requirements" class="mw-100 d-block">
 					</div>
 				</div>
 			</div>
@@ -588,7 +635,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 </div>
  <!-- /.main-adm -->
 
-
+<!-- Жилье -->
 <div class="main-program black" id="housing">
   <div class="page__wrap">
     <div class="d-flex flex-wrap">
@@ -680,6 +727,8 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 </div>
 <!-- /.main-program -->
  
+
+ <!-- Книга Русский язык -->
 <div class="main-step">
 	<div class="page__wrap">
 		<div class="d-flex flex-wrap">
@@ -703,7 +752,9 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
  								<img src="/local/templates/alabuga/img/icon/telegram.svg" alt="telegram" class="mw-100 d-block">
 							</div>
                             <? $telegram = \COption::GetOptionString( "askaron.settings", "UF_MAIN_TELEGRAM");?>                                    
-							 <!-- /.icon --> 1. Text us your name and country on Telegram and get your responsible HR <a title="telegram" href="https://t.me/<?=str_replace('@','',$telegram)?>" class="tgLnk" target="_blank"><?=$telegram?></a>
+							 <!-- /.icon --> 1. Text us your name and country on Telegram and get your responsible HR 
+							 <!-- <a title="telegram" href="https://t.me/<?//=str_replace('@','',$telegram)?>" class="tgLnk" target="_blank"><?//=$telegram?></a> -->
+							 <a title="telegram" href="https://t.me/+YYbDeLmMs8FkNTNi" class="tgLnk" target="_blank">Telegram</a>
                             </li>
                             <li>
                              <span>
@@ -730,7 +781,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 							<div class="icon">
  								<img src="/local/templates/alabuga/img/icon/union_icon.svg" alt="union" class="mw-100 d-block">
 							</div>
-							 <!-- /.icon --> 5. Pass an online interview </li>
+							 <!-- /.icon --> 5. Pass an online interview with hr specialist</li>
 							<li>
 							<div class="icon">
  								<img src="/local/templates/alabuga/img/icon/exam-results_icon.svg" alt="exam-results" class="mw-100 d-block">
@@ -748,19 +799,19 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 						<ul>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/free-icon-new-email.svg" alt="new email" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/free-icon-new-email.svg" alt="new email" class="mw-100 d-block">
 							</div>
 							 <!-- /.icon --> Application: <i>Ongoing</i> </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/plane_small_icon.svg" alt="plane" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/plane_small_icon.svg" alt="plane" class="mw-100 d-block">
 							</div>
 							 <!-- /.icon --> Arrival to russia: <i>Up to 2 months after passing <a title="all stages" href="#admSteps" class="gtSteps">all stages</a></i> </li>
 							<li>
 							<div class="icon">
- <img src="/local/templates/alabuga/img/icon/exam-results_icon.svg" alt="exam results" class="mw-100 d-block">
+ 								<img src="/local/templates/alabuga/img/icon/exam-results_icon.svg" alt="exam results" class="mw-100 d-block">
 							</div>
-							 <!-- /.icon --> Signing the employment contract: <i>Within 1 month after arrival to Russia</i> </li>
+							 <!-- /.icon --> Signing the employment contract: <i>Within 2 month after arrival to Russia</i> </li>
 						</ul>
 					</div>
 					 <!-- /.list -->
@@ -771,6 +822,9 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 	</div>
 </div>
  <!-- /.main-step -->
+
+
+<!-- Контакты -->
 <div class="main-contact" id="contacts">
 	<div class="page__wrap">
 		<h2>Contact information</h2>
@@ -803,8 +857,9 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
                                 </div>
                             	<div>
                                 	<div class="icon sml"><img src="<?=SITE_TEMPLATE_PATH?>/img/icon/telegram.svg" alt="telegram" class="mw-100 d-block"></div>
-                                    <? $telegram = \COption::GetOptionString( "askaron.settings", "UF_MAIN_TELEGRAM");?>
-                                    <a title="telegram" href="https://t.me/<?=str_replace('@','',$telegram)?>" target="_blank"><?=$telegram?></a>
+                                    <? //$telegram = \COption::GetOptionString( "askaron.settings", "UF_MAIN_TELEGRAM");?>
+                                    <!-- <a title="telegram" href="https://t.me/<?//=str_replace('@','',$telegram)?>" target="_blank"><?//=$telegram?></a> -->
+                                    <a title="telegram" href="https://t.me/+YYbDeLmMs8FkNTNi" target="_blank">Telegram</a>
                                 </div>
                         	</div>
                         </div>
@@ -820,7 +875,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 								</div>
 								<div class="group">
 									<div class="name">
-										 JOIN OUR
+										 Join our telegram channel
 									</div>
 									<a title="CHANNEL" href="https://t.me/AlabugaStart" target="_blank" class="link">CHANNEL</a>
 								</div>
@@ -862,7 +917,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 								</div>
 								<div class="group">
 									<div class="name">
-										 X
+										 Join our X channel
 									</div>
 									<a title="CHANNEL" href="https://x.com/sezalabuga?s=21" target="_blank" class="link">CHANNEL</a>
 								</div>
@@ -872,13 +927,13 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 						<!--<div class="item">
 							<div class="main-contact_cart main-contact_gr">
 								<div class="icon">
- <img src="/local/templates/alabuga/img/icon/cube-3d_icon.svg" alt="" class="mw-100 d-block">
+ 									<img src="/local/templates/alabuga/img/icon/cube-3d_icon.svg" alt="" class="mw-100 d-block">
 								</div>
 								<div class="group">
 									<div class="name">
 										 3D tour:
 									</div>
- <a title="" href="https://my.matterport.com/show/?m=dtWRJue8MA2&help=1&gt=1" target="_blank" class="link">
+ 									<a title="" href="https://my.matterport.com/show/?m=dtWRJue8MA2&help=1&gt=1" target="_blank" class="link">
 									follow the link </a>
 								</div>
 							</div>
@@ -887,49 +942,59 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 						<div class="item">
 							<div class="main-contact_cart main-contact_qr">
 								<div class="icon">
- 		<img src="/local/templates/alabuga/img/qr-code-1.gif" alt="qr-code" class="mw-100 d-block">
+ 									<img src="/local/templates/alabuga/img/qr-code-1.gif" alt="qr-code" class="mw-100 d-block">
 								</div>
 								<div class="group">
 									<div class="name">
 										 Register on hr-platform:
 									</div>
- <a title="hr.alabuga.ru" href="https://hr.alabuga.ru" class="link" target="_blank">
+ 									<a title="hr.alabuga.ru" href="https://hr.alabuga.ru" class="link" target="_blank">
 									https://hr.alabuga.ru </a>
 								</div>
 							</div>
 							 <!-- /.main-contact_cart -->
 						</div>
-						<div class="item">
+						<!-- <div class="item">
 							<div class="main-contact_cart main-contact_qr">
 								<div class="icon">
- <img src="/local/templates/alabuga/img/qr-code-2.gif" alt="qr-code" class="mw-100 d-block">
+ 									<img src="/local/templates/alabuga/img/qr-code-2.gif" alt="qr-code" class="mw-100 d-block">
 								</div>
 								<div class="group">
 									<div class="name">
 										 Check our telegram-bot for faq:
 									</div>
- 	<a title="alabuga_start_bot" href="https://t.me/Alabuga_Start_bot" class="link" target="_blank">
+ 									<a title="alabuga_start_bot" href="https://t.me/Alabuga_Start_bot" class="link" target="_blank">
 									@alabuga_start_bot </a>
 								</div>
 							</div>
-							 <!-- /.main-contact_cart -->
-						</div>
+						</div> -->
+
+
+						<!-- Block files -->
 						<div class="item">
 							<div class="main-contact_cart main-contact_gr">
 								<div class="icon">
- <img src="/local/templates/alabuga/img/icon/folder.svg" alt="folder" class="mw-100 d-block">
+ 									<img src="/local/templates/alabuga/img/icon/folder.svg" alt="folder" class="mw-100 d-block">
 								</div>
 								<div class="group">
 									<div class="name">
 									</div>
- 									<a title="FILES" href="javascript:;" data-fancybox data-src="#files_block" target="_blank" class="link"> FILES </a>
+
+
+
+									<!-- Modal link -->
+ 									<a title="FILES" href="javascript:;" data-fancybox data-src="#files_block" target="_blank" class="link"> Presentation of the programme </a>
+
+ 									<!-- Modal files -->
                                     <div id="files_block" style="display: none; max-width: 800px; max-height: 100%;">
                                     	<ul class="files">
-                                    		<li><a title="Алабуга Старт 2024 RU" href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_RUS"));?>" target="_blank">Алабуга Старт 2024 RU</a><br /></li>
-                                            <li><a title="Alabuga Start 2024 EN" href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_ENG"));?>" target="_blank">Alabuga Start 2024 EN</a><br /></li>
-                                            <li><a title="ALABUGA START WELCOME BOOK EN" href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_WB"));?>" target="_blank">ALABUGA START WELCOME BOOK EN</a></li>
+                                    		<li><a title="Алабуга Старт 2025 RU" href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_RUS"));?>" target="_blank">Алабуга Старт 2025 RU</a><br /></li>
+                                            <li><a title="Alabuga Start 2025 EN" href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_ENG"));?>" target="_blank">Alabuga Start 2025 EN</a><br /></li>
+                                            <!-- <li><a title="ALABUGA START WELCOME BOOK EN" href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_WB"));?>" target="_blank">ALABUGA START WELCOME BOOK EN</a></li> -->
                                         </ul>
                                     </div>
+
+
 								</div>
 							</div>
 							 <!-- /.main-contact_cart -->
@@ -953,13 +1018,13 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 						<div class="item">
 							<div class="main-contact_cart main-contact_gr">
 								<div class="icon">
- <img src="/local/templates/alabuga/img/icon/contract_icon.svg" alt="" class="mw-100 d-block">
+ 									<img src="/local/templates/alabuga/img/icon/contract_icon.svg" alt="" class="mw-100 d-block">
 								</div>
 								<div class="group">
 									<div class="name">
 										 APPLICATION
 									</div>
- <a title="" href="<?=CV_FORM?>" target="_blank" class="link"> FORM </a>
+ 									<a title="" href="<?=CV_FORM?>" target="_blank" class="link"> FORM </a>
 								</div>
 							</div>
 							 <!-- /.main-contact_cart -->
@@ -967,13 +1032,13 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 						<div class="item">
 							<div class="main-contact_cart main-contact_gr">
 								<div class="icon">
- <img src="/local/templates/alabuga/img/icon/youtube_icon.svg" alt="" class="mw-100 d-block">
+ 									<img src="/local/templates/alabuga/img/icon/youtube_icon.svg" alt="" class="mw-100 d-block">
 								</div>
 								<div class="group">
 									<div class="name">
 										 WATCH US:
 									</div>
- <video controls="" id="corpVideo" style="display:none;" muted=""> <source src="<span id=" title="PHP code: &lt;?=CORP_VIDEO?&gt;" class="bxhtmled-surrogate"><?=CORP_VIDEO?><span class="bxhtmled-surrogate-inner"><span class="bxhtmled-right-side-item-icon"></span><span class="bxhtmled-comp-lable" unselectable="on" spellcheck="false">PHP code</span></span>" type="video/mp4"&gt; </video> <a title="" href="#corpVideo" data-fancybox="" class="link" target="_blank">
+									 <video controls="" id="corpVideo" style="display:none;" muted=""> <source src="<span id=" title="PHP code: &lt;?=CORP_VIDEO?&gt;" class="bxhtmled-surrogate"><?=CORP_VIDEO?><span class="bxhtmled-surrogate-inner"><span class="bxhtmled-right-side-item-icon"></span><span class="bxhtmled-comp-lable" unselectable="on" spellcheck="false">PHP code</span></span>" type="video/mp4"&gt; </video> <a title="" href="#corpVideo" data-fancybox="" class="link" target="_blank">
 									Alabuga Corporate Film </a>
 								</div>
 							</div>
@@ -989,6 +1054,8 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 	</div>
 </div>
 <!-- /.main-contact -->
+
+<!-- FAQ -->
 <div id="faq">
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
@@ -1053,6 +1120,5 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 </div>
 
 
-<? include $_SERVER['DOCUMENT_ROOT'] . "/grant_program.php"; ?>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

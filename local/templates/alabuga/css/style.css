@@ -2759,7 +2759,25 @@ a:focus {
 
 .cart-fields .name.grant-program-numbs {
   font-size: 58px;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) { 
+  .cart-fields .name.grant-program-numbs {
+    font-weight: 600;
+    font-size: 2rem;
+  } 
+
+  .cart-fields .name.grant-program-numbs.nowrap {
+    white-space: normal;
+  } 
+
+  .cart-fields .cart-fields_block {
+    color: #000;
+    font-weight: 500;
+    font-size: 0.8125rem;
+  }
+
 }
 
 .grant-program .notes {
@@ -2802,10 +2820,52 @@ a:focus {
 	white-space: nowrap;
 }
 
-.max-w-40{
-	max-width: 40% !important;
+@media (min-width: 1900px){  
+  .max-w-40 {
+  	max-width: 40% !important;
+  }
 }
 
 .pl-0 {
 	padding-left: 0;
 }
+
+.white-button {
+  height: 120px;
+  font-size: 40px;
+  border-radius: 20px;
+  font-weight: 800;
+  padding: 0 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.anchor-buttons {
+  justify-content: center;
+  gap: 65px;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+
+  .visible-mobile {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .anchor-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .white-button {
+    font-size: 20px;
+    height: 60px;
+  }
+}
+

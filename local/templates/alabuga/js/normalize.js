@@ -5,7 +5,7 @@ $(function() {
 	})
 	$('.js-main-feedback_slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
 		var cs = 0;
-		console.log(slick);
+		// console.log(slick);
 		if(currentSlide == slick.slideCount - 2)
 			cs = slick.slideCount
 		else
@@ -68,7 +68,7 @@ $(function() {
 	})
 	$('.js-main-news_slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
 		var cs = 0;
-		console.log(slick);
+		// console.log(slick);
 		if(currentSlide == slick.slideCount - 2)
 			cs = slick.slideCount
 		else
@@ -245,6 +245,16 @@ $(function() {
 			},
 		]
 	});
+
+	// grant grogramm
+	$('.ancors').on('click', ev => {
+		let href = $(ev.target).attr('href');
+		console.log($(`${href}`))
+		if($(`${href}`).length)
+			$(`${href}`)[0].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+	})
+
+
 });
 
 function isMobile() {

@@ -16,7 +16,11 @@ define("JOIN_LINK_RU", \COption::GetOptionString( "askaron.settings", "UF_JOIN_L
 define("LIST_FILE", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_LIST_FILE")));
 define("LIST_FILE_RU", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_LIST_FILE_RU")));
 define("FORM_FILE", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FORM_FILE")));
+
 define("WORDS_FILE", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_WORDS_FILE")));
+define("WORDS_FILE_FR", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_WORDS_FILE_FR")));
+define("WORDS_FILE_ES", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_WORDS_FILE_ES")));
+
 define("CORP_VIDEO", CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_VIDEO")));
 define("HOSTELS_LINK", \COption::GetOptionString( "askaron.settings", "UF_HOSTELS_LINK"));
 define("MORE_INFO_LINK", \COption::GetOptionString( "askaron.settings", "UF_MORE_INFO"));
@@ -78,7 +82,7 @@ define("FILES_LINK", \COption::GetOptionString( "askaron.settings", "UF_FILES_LI
     
 </head>
 
-<body>
+<body class="language_<?=LNG_ID;?>">
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6HVTFX"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -244,11 +248,17 @@ define("FILES_LINK", \COption::GetOptionString( "askaron.settings", "UF_FILES_LI
                                 Array(),
                                 Array("MODE"=>"html", "NAME" => "Заглавный баннер", "TEMPLATE" => "head_bnr.php")
                             );?>
-							<a title="JOIN LINK" href="<?if ($APPLICATION->GetCurDir()=='/ru/') {echo JOIN_LINK_RU;}else{echo JOIN_LINK;}?>" data-join target="_blank" class="page__btn page__btn--curr">
+
+                            <div class="anchor-buttons flex">
+	                            <button class="white-button ancors" href="#grantCompetition">Grant Competition</button>
+	                            <button class="white-button ancors" href="#news">Employment<br>Opportunities</button>
+							</div>
+
+							<!-- <a title="JOIN LINK" href="<?if ($APPLICATION->GetCurDir()=='/ru/') {echo JOIN_LINK_RU;}else{echo JOIN_LINK;}?>" data-join target="_blank" class="page__btn page__btn--curr">
 								<span>
 									<?=GetMessage('JOIN_BTN')?>
 								</span>
-							</a>
+							</a> -->
 						</div>
 					</div>
 					<!-- /.main_ban-bx -->

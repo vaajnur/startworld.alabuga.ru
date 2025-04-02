@@ -720,7 +720,7 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 							<div class="icon">
  <img src="/local/templates/alabuga/img/icon/bubble-chat_small_icon.svg" alt="" class="mw-100 d-block">
 							</div>
-							 <!-- /.icon --> 3. APPRENEZ AU MOINS <a href="<?=WORDS_FILE?>" target="_blank">100 MOTS</a> EN RUSSE </li>
+							 <!-- /.icon --> 3. APPRENEZ AU MOINS <a href="<?=WORDS_FILE_FR?>" target="_blank">100 MOTS</a> EN RUSSE </li>
 							<li>
 							<div class="icon">
  <img src="/local/templates/alabuga/img/icon/laptop_icon.svg" alt="" class="mw-100 d-block">
@@ -928,15 +928,22 @@ $APPLICATION->SetPageProperty("description", "Alabuga start world is a unique op
 								<div class="group">
 									<div class="name">
 									</div>
- <a href="javascript:;" data-fancybox="" data-src="#files_block" target="_blank" class="link"> FICHIERS </a>
+ 									
+
+ 									<a href="javascript:;" data-fancybox="" data-src="#files_block" target="_blank" class="link"> FICHIERS </a>
+									
+
 									<div id="files_block" style="display: none; max-width: 800px; max-height: 100%;">
 										<ul class="files">
 											
-                                    		<li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_RUS"));?>" target="_blank">Алабуга Старт 2024 RU</a><br /></li>
-                                            <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_ENG"));?>" target="_blank">Alabuga Start 2024 EN</a><br /></li>
-                                            <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_WB"));?>" target="_blank">ALABUGA START WELCOME BOOK EN</a></li>
+                                    		<li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_RUS"));?>" target="_blank">Алабуга Старт 2025 RU</a><br /></li>
+                                            <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_FR"));?>" target="_blank">Alabuga Start 2025 FR</a><br /></li>
+                                            <!-- <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_WB"));?>" target="_blank">ALABUGA START WELCOME BOOK EN</a></li> -->
 										</ul>
 									</div>
+
+
+
 								</div>
 							</div>
 							 <!-- /.main-contact_cart -->

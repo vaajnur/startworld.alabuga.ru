@@ -724,7 +724,7 @@ $APPLICATION->SetTitle("ALABUGA START - Relocation program to Russia for work ex
 							<div class="icon">
  <img src="/local/templates/alabuga/img/icon/bubble-chat_small_icon.svg" alt="" class="mw-100 d-block">
 							</div>
-							 <!-- /.icon --> 3. APRENDE AL MENOS <a href="<?=WORDS_FILE?>" target="_blank">100 PALABRAS</a> EN RUSO </li>
+							 <!-- /.icon --> 3. APRENDE AL MENOS <a href="<?=WORDS_FILE_ES?>" target="_blank">100 PALABRAS</a> EN RUSO </li>
 							<li>
 							<div class="icon">
  <img src="/local/templates/alabuga/img/icon/laptop_icon.svg" alt="" class="mw-100 d-block">
@@ -930,14 +930,18 @@ $APPLICATION->SetTitle("ALABUGA START - Relocation program to Russia for work ex
 								<div class="group">
 									<div class="name">
 									</div>
+
  									<a href="javascript:;" data-fancybox data-src="#files_block" target="_blank" class="link"> ARCHIVOS </a>
+                                    
                                     <div id="files_block" style="display: none; max-width: 800px; max-height: 100%;">
                                     	<ul class="files">
-                                    		<li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_RUS"));?>" target="_blank">Алабуга Старт 2024 RU</a><br /></li>
-                                            <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_ENG"));?>" target="_blank">Alabuga Start 2024 EN</a><br /></li>
-                                            <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_WB"));?>" target="_blank">ALABUGA START WELCOME BOOK EN</a></li>
+                                    		<li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_RUS"));?>" target="_blank">Алабуга Старт 2025 RU</a><br /></li>
+                                            <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_AS_ES"));?>" target="_blank">Alabuga Start 2025 ES</a><br /></li>
+                                            <!-- <li><a href="<?=CFile::GetPath(\COption::GetOptionString( "askaron.settings", "UF_FILES_WB"));?>" target="_blank">ALABUGA START WELCOME BOOK EN</a></li> -->
                                         </ul>
                                     </div>
+
+
 								</div>
 							</div>
 							 <!-- /.main-contact_cart -->

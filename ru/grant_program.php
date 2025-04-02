@@ -1,7 +1,7 @@
-<div class="main-program grant-program">
+<div id="grantCompetition" class="main-program grant-program">
 <div class="page__wrap">
 
-	<h2 class="text-center">Грантовый конкурс "Алабуга Старт"</h2>
+	<h2 class="text-center">Грантовый конкурс «Алабуга Старт»</h2>
 
 	<div class="main-fields_block mb-10">
 	    <div class="d-flex flex-wrap justify-content-center">
@@ -17,7 +17,7 @@
 	                <div class="cart-fields_block">
 	                    <div class="group">
 	                        <div class="txt">
-	                            cтран принимают участие в программе "Алабуга Старт.
+	                            cтран принимают участие в программе «Алабуга Старт».
 	                        </div>
 	                    </div>
 	                </div>
@@ -36,7 +36,7 @@
 	                <!-- /.cart-fields_top -->
 	                <div class="cart-fields_block">
 	                    <div class="group">
-	                        <div class="txt">представителей смогут получить поддержку от АО "ОЭЗ ППТ "Алабуга" за активную работу.</div>
+	                        <div class="txt">представителей смогут получить поддержку от АО "ОЭЗ ППТ «Алабуга» за активную работу.</div>
 	                    </div>
 	                </div>
 	            </div>
@@ -80,7 +80,7 @@
 	                <!-- /.cart-fields_top -->
 	                <div class="cart-fields_block">
 	                    <div class="group">
-	                        <div class="txt">Выплаты за трудоустройство кангдидатов на программу "Алабуга Старт"</div>
+	                        <div class="txt">Выплаты за трудоустройство кангдидатов на программу «Алабуга Старт»</div>
 	                    </div>
 	                </div>
 	            </div>

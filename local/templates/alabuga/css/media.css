@@ -35,6 +35,8 @@
     max-width: 55%;
     padding-left: 0.625rem;
   }
+
+
   .cart-group .numb {
     margin-bottom: 0;
   }
@@ -99,6 +101,49 @@
   }
 }
 
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+  .cart-fields_block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .grant-program .cart-fields .cart-fields_top ,
+  .language_ru #fields  .cart-fields .cart-fields_top {
+    max-width: 100%;
+    flex: none;
+    margin-bottom: 10px;
+  }
+
+  .grant-program .cart-fields .cart-fields_block ,
+  .language_ru #fields .cart-fields .cart-fields_block {
+    max-width: 100%;
+    flex: none;
+    padding-left: 0;
+  }
+
+  .language_ru #fields .cart-fields_top .btn {
+    margin-top: 0;
+  }
+
+  #contacts.main-contact .main-contact_cart {
+    display: flex;
+  }
+
+  #contacts.main-contact .main-contact_cart .group {
+    grid-template-rows: auto;
+  }
+
+}
+
+#grantCompetition .cart-fields_btn {
+  display: block;
+}
+
 @media (min-width: 480px) {
   .main_ban-bx {
     padding: 0 1.5rem;
@@ -119,18 +164,20 @@
     -ms-border-radius: 1.875rem;
     -o-border-radius: 1.875rem;
   }
-  .cart-group .txt {
+  .cart-group .txt, 
+  .grant-program .txt {
     padding: 0 1.5rem;
     -webkit-box-flex: initial;
         -ms-flex: initial;
             flex: initial;
     max-width: initial;
   }
-  .cart-group .numb {
-    margin-bottom: 0.625rem;
+  .cart-group .numb,
+  .cart-fields .name.grant-program-numbs {
     font-size: 2.1875rem;
   }
-  .cart-group .numb i {
+  .cart-group .numb i,
+  .cart-fields .name.grant-program-numbs i {
     font-size: 1.125rem;
   }
 }
@@ -189,6 +236,11 @@
             flex: 0 0 50%;
     max-width: 50%;
   }
+
+  .main-fields_block .bx.max-w-40 {
+    max-width: 80%;
+  }
+
   .main-adm_btn .page__btn {
     min-width: 160px;
   }
@@ -251,7 +303,8 @@
             flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+/*            justify-content: space-between;*/
+            justify-content: start;
     text-align: center;
     padding: 2.5rem 1.5625rem;
   }
@@ -270,6 +323,7 @@
             flex: initial;
     max-width: initial;
     padding-left: 0;
+    padding-top: 0;
   }
   .cart-fields_block .desc {
     font-size: 0.9375rem;
@@ -277,13 +331,19 @@
   .cart-fields_block .subname {
     font-size: 0.9375rem;
   }
-  .cart-fields_top, #faq .cart-fields_top{
+  .cart-fields_top, 
+  #faq .cart-fields_top{
     -webkit-box-flex: initial;
         -ms-flex: initial;
             flex: initial;
     max-width: initial;
     display: block;
   }
+
+  .cart-fields_top{
+    margin-bottom: 10px;
+  }
+
   .cart-fields_top .btn {
     display: none;
   }
@@ -563,13 +623,16 @@
 }
 
 @media (min-width: 1100px) {
-  .cart-group .txt {
+  .cart-group .txt,
+  .grant-program .txt {
     padding: 0 2rem;
   }
-  .cart-group .numb {
+  .cart-group .numb ,
+  .cart-fields .name.grant-program-numbs {
     font-size: 3rem;
   }
-  .cart-group .numb i {
+  .cart-group .numb i ,
+  .cart-fields .name.grant-program-numbs i {
     font-size: 1.5625rem;
   }
   .main-plan_block {
@@ -735,7 +798,8 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .cart-group .numb {
+  .cart-group .numb, 
+  .cart-fields .name.grant-program-numbs {
     font-size: 3.4375rem;
   }
   .modal-container {

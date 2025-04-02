@@ -1,7 +1,7 @@
-<div class="main-program grant-program">
+<div id="grantCompetition" class="main-program grant-program">
 <div class="page__wrap">
 
-	<h2 class="text-center">"Alabuga Start" grant program</h2>
+	<h2 class="text-center">«Alabuga Start» grant competition</h2>
 
 	<div class="main-fields_block mb-10">
 	    <div class="d-flex flex-wrap justify-content-center">
@@ -17,7 +17,7 @@
 	                <div class="cart-fields_block">
 	                    <div class="group">
 	                        <div class="txt">
-	                            countries are taking part in the "Alabuga Start" program
+	                            countries are taking part in the «Alabuga Start» program
 	                        </div>
 	                    </div>
 	                </div>
@@ -69,7 +69,7 @@
 	</div>
 
 
-	<h2 class="text-center">Nominations for the "Alabuga Start" grant program</h2>
+	<h2 class="text-center">Nominations for the «Alabuga Start» grant competition</h2>
 
 
 	<div class="main-fields_block">
@@ -84,9 +84,7 @@
 	                <!-- /.cart-fields_top -->
 	                <div class="cart-fields_block">
 	                    <div class="group">
-	                        <div class="txt">
-	                        	Payments for employment of candidates for the Alabuga Start program nomination:
-	                        </div>
+	                        <div class="txt">USD 7000 average payout to one representative for fulfillment of the conditions of two nominations</div>
 	                    </div>
 	                </div>
 	            </div>
@@ -98,14 +96,14 @@
 	            <div class="cart-fields">
 	                <div class="cart-fields_top">
 	                    <div class="name">
-	                        «Employment Leader»</div>
+	                        «Employment Leader» nomination</div>
 	                    <!-- /.name -->
 	                </div>
 	                <!-- /.cart-fields_top -->
 	                <div class="cart-fields_block">
 	                    <div class="group">
 	                        <div class="txt">
-	                        	Payments for collecting a full package of documents for registration of a candidate for the program
+	                        	Payments for employment of candidates for the Alabuga Start programme
 	                        </div>
 	                    </div>
 	                </div>
@@ -117,14 +115,14 @@
 	            <div class="cart-fields">
 	                <div class="cart-fields_top">
 	                    <div class="name">
-	                        «Full Support»</div>
+	                        «Full Support» nomination</div>
 	                    <!-- /.name -->
 	                </div>
 	                <!-- /.cart-fields_top -->
 	                <div class="cart-fields_block">
 	                    <div class="group">
 	                        <div class="txt">
-	                        	USD 7000 average payout to one representative for fulfillment of the conditions of two nominations
+	                        	Payments for collecting a full package of documents for registration of a candidate for the programme
 	                        </div>
 	                    </div>
 	                </div>
@@ -158,7 +156,7 @@
 	            <div class="cart-fields">
 	                <div class="cart-fields_top">
 	                    <div class="name">
-	                    	Partner of the Year
+	                    	«Partner of the Year» nomination
 	                        </div>
 	                    <!-- /.name -->
 	                </div>
@@ -166,7 +164,7 @@
 	                <div class="cart-fields_block">
 	                    <div class="group">
 	                        <div class="txt">
-	                        	Up to 14000 USD to one representative in the “Partner of the Year” nomination
+	                        	including IV grant levels. Up to 14000 USD to one representative in the “Partner of the Year” nomination
 	                        </div>
 	                    </div>
 	                </div>
@@ -179,7 +177,8 @@
 	</div>
 
 
-	<p class="notes my-10">*Payout depends on the number of quotas that have been allocated to your country!</p>
+	<div class="my-10"></div>
+	<!-- <p class="notes my-10">*Payout depends on the number of quotas that have been allocated to your country!</p> -->
 
 
 	<div class="d-flex flex-wrap">
@@ -188,20 +187,20 @@
 	    <div class="bx">
 	    	<div class="main-program_cart">
 	            <h2>
-	                Stages of the grant program </h2>
+	                Stages of the grant competition </h2>
 	            <div class="list">
 	                <ol class="grant-list pl-0">
 	                    <li>
 	                        <div class="icon">
 	                            <img src="/local/templates/alabuga/img/icon/telegram.svg" alt="Professional training" class="mw-100 d-block">
 	                        </div>
-	                       Acceptance of applications for participation in the Grant Program 
+	                       Acceptance of applications for participation in the Grant competition
 	                    </li>
 	                    <li>
 	                        <div class="icon">
 	                            <img src="/local/templates/alabuga/img/icon/laptop_icon.svg" alt="Russian language lessons" class="mw-100 d-block">
 	                        </div>
-	                        Recruitment process organized by representatives within the framework of the Grant Program
+	                        Recruitment process organized by representatives within the framework of the grant competition
 	                    </li>
 	                    <li>
 	                        <div class="icon">
@@ -213,7 +212,13 @@
 	                        <div class="icon">
 	                            <img src="/local/templates/alabuga/img/icon/exam-results_icon.svg" alt="Preferential accommodation in comfortable" class="mw-100 d-block">
 	                        </div>
-	                        Announcement of the results of the Grant Program
+	                        Announcement of the results of the grant competition
+	                    </li>
+	                    <li>
+	                        <div class="icon">
+	                            <img src="/local/templates/alabuga/img/icon/exam-results_icon.svg" alt="Preferential accommodation in comfortable" class="mw-100 d-block">
+	                        </div>
+	                        Disbursements to grant recipients
 	                    </li>
 	                </ol>
 	            </div>
@@ -225,10 +230,10 @@
 	        <div class="main-program_cart">
 	            <h2>
 	                Documents </h2>
-	                <p>For detailed information on the terms and nominations of the Grant Program, the number of quotas, conditions of participation and payouts, please refer to the Grant Program Regulations.</p>
+	                <p>For detailed information on the terms and nominations of the Grant competition, the number of quotas, conditions of participation and payouts, please refer to the Grant competition Regulations.</p>
 
 			        <div class="cart-fields_btn">
-		                <a target="_blank" href="/upload/regulations_on_the_grant_competition_alabuga_start.pdf" class="page__btn page__btn--curr">
+		                <a target="_blank" href="/upload/Regulations on the Grant Competition Alabuga Start.pdf" class="page__btn page__btn--curr">
 		                    <span>Documents</span>
 		                </a>
 		            </div>
@@ -240,7 +245,7 @@
 	</div>
 
 
-	<h2 class="my-10">Submit an application for participation in the grant program</h2>
+	<h2 class="my-10">Submit an application for participation in the grant competition</h2>
 
 
 	<div class="d-flex flex-wrap forms">

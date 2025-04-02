@@ -43,9 +43,9 @@ $this->setFrameMode(true);
                     <div class="name">
                 	<?=$arItem["DISPLAY_PROPERTIES"]["NAME_".LNG_ID]["DISPLAY_VALUE"]?>
                     </div>
-                    <div class="city">
-                	<?=$arItem["DISPLAY_PROPERTIES"]["COUNTRY_".LNG_ID]["DISPLAY_VALUE"]?>
-                    </div>
+                    <!-- <div class="city">
+                	   <?=$arItem["DISPLAY_PROPERTIES"]["COUNTRY_".LNG_ID]["DISPLAY_VALUE"]?>
+                    </div> -->
                 </div>
             </div>
         </div>
